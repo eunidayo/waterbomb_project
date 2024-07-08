@@ -49,17 +49,20 @@ html {
   flex-direction: column;
   gap: 40px;
   width: 300px; /* 원하는 너비로 설정 */
+  height: 570px;
   padding: 20px;
   background-color: black;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
 .header {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.fa-arrow-left {
+  color: white;
 }
 .logo {
   font-size: 24px;
@@ -85,31 +88,27 @@ html {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 .formButton {
   width: 100%;
   padding: 10px;
-  background-color: #007bff;
+  background-color: #00a8ff;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  margin-top: 10px;
-}
-.formButton:hover {
-  background-color: #0056b3;
+  padding-top: 10px;
 }
 .accountLinks {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .accountLinks p {
   cursor: pointer;
-  color: #007bff;
+  color: #fff;
 }
 
 .accountLinks p:hover {
