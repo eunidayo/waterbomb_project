@@ -8,14 +8,6 @@
   font-weight: 700;
   font-style: normal;
 }
-/* 한글 : 배달의민족 도현체  */
-@font-face {
-  font-family: "BMDOHYEON";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 /* 영문 : Sans serif  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
@@ -24,5 +16,115 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
   /* outline: 1px solid navy; */
 }
+/* 헤더 css 시작 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #000000;
+  color: white;
+  height: 45px;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  width: 56px;
+  height: 27px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid #ffbf00;
+}
+.logo span {
+  color: #ffbf00;
+  font-family: "MoveSans-Bold";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7px; /* 87.5% */
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navRight a {
+  text-decoration: none;
+}
+.navRight a button {
+  display: flex;
+  height: 24px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 10px;
+  border-color: transparent;
+  background: #0aabff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px; /* 175% */
+}
+.close-btn {
+  color: white;
+}
+.side-menu {
+  display: none;
+}
+/* 헤더 css 끝 */
+/* footer css 시작 */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+footer .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  color: #fff;
+}
+footer .contents p {
+  text-align: center;
+  font-size: 10px;
+  line-height: 24px; /* 266.667% */
+  margin: 0;
+}
+footer .contents .icoGroup {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+footer span {
+  text-align: center;
+  font-size: 10px;
+  line-height: 24px;
+}
+/* footer css 끝 */

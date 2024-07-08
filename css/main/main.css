@@ -8,23 +8,15 @@
   font-weight: 700;
   font-style: normal;
 }
-/* 한글 : 배달의민족 도현체  */
-@font-face {
-  font-family: "BMDOHYEON";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-/* 영문 : Sans serif  */
+/* 영문, 국문 : Sans serif  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-/* 임포트 방법 👉 font-family: "Open Sans", sans-serif; */
 
 /* -----------------------------시작---------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
   /* outline: 1px solid navy; */
 }
 body {
@@ -86,7 +78,6 @@ body {
 }
 .navRight a button {
   display: flex;
-  width: 80px;
   height: 24px;
   padding: 10px;
   justify-content: center;
@@ -100,9 +91,7 @@ body {
 
   color: #000;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 21px; /* 175% */
 }
@@ -147,7 +136,6 @@ body {
   flex: 1 0 0;
 }
 .sec02 .inner button {
-  font-family: "Open Sans", sans-serif;
   line-height: 21px;
   width: 139px;
   height: 30px;
@@ -174,7 +162,6 @@ body {
 .sec02 .contents .title h1 {
   color: #fff;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
   font-size: 32px;
   font-weight: 800;
   line-height: 21px;
@@ -187,19 +174,14 @@ body {
 .sec02 .location h2 {
   color: #ffbf00;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
   font-size: 22px;
-  font-style: normal;
   font-weight: 800;
   line-height: 21px; /* 95.455% */
 }
 .sec02 .date h2 {
   color: #fff;
-
   text-align: center;
-  font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 21px; /* 105% */
 }
@@ -238,18 +220,14 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: "Open Sans", sans-serif;
   font-size: 24px;
-  font-style: normal;
   font-weight: 800;
   line-height: 21px;
 }
 .sec03 .title h3 {
   color: #fff;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 800;
   line-height: 21px; /* 105% */
 }
@@ -272,7 +250,6 @@ footer .contents {
 }
 footer .contents p {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
   font-size: 9px;
   line-height: 24px; /* 266.667% */
   margin: 0;
@@ -284,7 +261,6 @@ footer .contents .icoGroup {
 }
 footer span {
   text-align: center;
-  font-family: "Open Sans", sans-serif;
   font-size: 7px;
   line-height: 24px;
 }
