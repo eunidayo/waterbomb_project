@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* 로고 : MOVE Sans */
+@font-face {
+  font-family: "MoveSans-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* 한글 : 배달의민족 도현체  */
+@font-face {
+  font-family: "BMDOHYEON";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 영문 : Sans serif  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+/* -----------------------------시작---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid navy; */
+}
