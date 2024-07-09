@@ -6,19 +6,15 @@
   font-weight: 700;
   font-style: normal;
 }
-/* 영문 : Sans serif  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-/* -----------------------------시작---------------------------- */
 * {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
   /* outline: 1px solid navy; */
 }
 body {
-  display: flex;
-  flex-direction: column;
   /* 320px 이하로 줄어들었을때 레이아웃 유지시키기 */
   min-width: 320px;
   /* max-width: 990px; */
@@ -78,6 +74,7 @@ body {
 }
 .navRight a button {
   display: flex;
+  width: auto;
   height: 24px;
   padding: 10px;
   justify-content: center;
@@ -90,6 +87,7 @@ body {
   color: #000;
   text-align: center;
   font-size: 12px;
+  font-style: normal;
   font-weight: 400;
   line-height: 21px;
   /* 175% */
@@ -100,63 +98,66 @@ body {
 .side-menu {
   display: none;
 }
+.myTicketBt {
+  display: none;
+}
+/* 헤더 css 끝 */
+/* 메인 css 시작 */
 main {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+}
+.container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
+  height: 700px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 50px;
+  padding-bottom: 50px;
 }
-.sec01 {
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+}
+.tablink {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 50%;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+}
+.tablink.active {
+  color: #4DFF4D;
+  border-bottom: 2px solid #4DFF4D;
+}
+.tabcontent {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.tabcontent p {
+  margin: 20px 0;
+}
+.buyTickets {
+  background-color: #00A8FF;
+  color: #fff;
+  border: none;
   padding: 10px 20px;
-  width: 100%;
-  height: auto;
-}
-.notice {
-  display: flex;
-  flex-direction: column;
-}
-.sec02 {
-  width: 100%;
-  height: 180px;
-  background: url(/waterbomb_project/image/payment_success/payment_success.jpg) no-repeat 100%/ cover;
-}
-.sec03 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 0px 10px 20px 10px;
-  background: #0AABFF;
-}
-.sec03Inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  gap: 10px;
-  padding: 10px 0px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  border-bottom: 2px dashed #0AABFF;
+  cursor: pointer;
 }
-.info {
-  display: flex;
-  justify-content: center;
-}
-.infoList {
-  display: flex;
-  flex-direction: column;
-}
-.caution {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+/* 메인 css 끝 */
+/* 풋터 시작 */
 footer {
   display: flex;
   justify-content: center;
@@ -186,4 +187,12 @@ footer span {
   text-align: center;
   font-size: 7px;
   line-height: 24px;
+}
+.tapContainer {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+}
+.nav-item {
+  width: auto;
 }
