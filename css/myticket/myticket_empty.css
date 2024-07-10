@@ -126,6 +126,56 @@ main {
   justify-content: space-around;
   background-color: #000;
 }
+.tabcontent .ticket {
+  width: 100%;
+}
+.tabcontent .top {
+  position: relative;
+}
+.tabcontent .top img {
+  width: 280px;
+  height: 100%;
+}
+.tabcontent .qrContainer {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tabcontent .qrContainer img {
+  width: 100px;
+  height: 100px;
+}
+.tabcontent .bottom {
+  position: relative;
+}
+.tabcontent .bottom::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 224px;
+  border-top: 4px dashed #fff;
+}
+.tabcontent .bottom img {
+  width: 280px;
+  height: 280px;
+}
+.tabcontent .infoContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tabcontent .infoContainer p {
+  color: #000;
+  margin: 0;
+  text-align: left;
+}
+.tabcontent .infoContainer .infoB {
+  font-weight: 800;
+}
 .tablink {
   background-color: #000;
   color: #fff;
@@ -173,7 +223,7 @@ footer .contents {
 }
 footer .contents p {
   text-align: center;
-  font-size: 9px;
+  font-size: 14px;
   line-height: 24px;
   /* 266.667% */
   margin: 0;
@@ -185,7 +235,7 @@ footer .contents .icoGroup {
 }
 footer span {
   text-align: center;
-  font-size: 7px;
+  font-size: 14px;
   line-height: 24px;
 }
 .tapContainer {

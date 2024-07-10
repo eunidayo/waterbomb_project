@@ -48,9 +48,30 @@
         <button class="tablink active" onclick="openTab(event, 'availableTickets')">사용 가능한 티켓</button>
         <button class="tablink" onclick="openTab(event, 'unavailableTickets')">사용 불가능한 티켓</button>
       </div>
-      <div id="availableTickets" class="tabcontent">
-        <p>사용 가능한 티켓이 없습니다.</p>
-        <a href="/waterbomb_project/html/ticket_selection.html"><button class="buyTickets">Buy Tickets</button></a>
+      <div id="availableTickets" class="tabcontent" style="display: block;">
+        <div class="ticket">
+          <div class="top">
+            <img src="/waterbomb_project/image/myticket/ticketTop.svg" alt="티켓 상단이미지" class="ticketTop">
+          </div>
+          <div class="qrContainer">
+            <img src="/waterbomb_project/image/myticket/qrcode.png" alt="QR코드 이미지" class="ticketTop">
+          </div>
+        </div>
+        <div class="bottom">
+          <img src="/waterbomb_project/image/myticket/ticketBottom.svg" alt="티켓 하단이미지">
+          <div class="infoContainer">
+            <p class="infoG">예매번호</p>
+            <p class="infoB">2024000012987653</p>
+            <p class="infoG">장소</p>
+            <p class="infoB">SEOUL</p>
+            <p class="infoG">날짜</p>
+            <p class="infoB">2024.7.5</p>
+            <p class="infoG">시간</p>
+            <p class="infoB">14:00</p>
+            <p class="infoG">좌석등급</p>
+            <p class="infoB">vvip</p>
+          </div>
+        </div>
       </div>
       <div id="unavailableTickets" class="tabcontent" style="display:none">
         <p>사용한 티켓이 없습니다.</p>
