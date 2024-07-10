@@ -26,13 +26,13 @@ body {
 /* 헤더 css 시작 */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  padding: 0 20px;
+  /* padding: 0 0 0 10px; */
   background-color: #000000;
   color: white;
   height: 50px;
-  width: 100%;
+  /* width: 100%; */
 }
 .logo {
   display: flex;
@@ -46,13 +46,13 @@ body {
 .logo span {
   color: #FFBF00;
   font-family: "MoveSans-Bold";
-  font-size:13px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 500;
   line-height: 7px;
   /* 87.5% */
 }
-.nav-links {
+/* .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -92,43 +92,55 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 21px;
-  /* 175% */
+  175%
 }
 .close-btn {
   color: white;
 }
 .side-menu {
   display: none;
-}
+} */
 main {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
 }
 .sec01 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 20px;
-  width: 100%;
-  height: auto;
+  /* padding: 10px 20px; */
+  /* width: 100%; */
+  /* height: auto; */
+  gap: 5px;
 }
-.sec01 .fa-circle-check{
+.sec01 .fa-circle-check {
   font-size: 40px;
-  color: rgb(77 255 77)
+  color: #4DFF4D
 }
 .sec01 .notice {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
-.sec01 .notice span{
-  font-size: 13px;
+.sec01 .notice span:first-child {
+  font-size: 15px;
 }
-.sec02 {
+.sec01 .notice span:last-child {
+  color: #0AABFF
+}
+.sec01 .notice span {
+  font-size: 12px;
+  color: #686868;
+}
+/* .sec02 {
   width: 100%;
   height: 180px;
   background: url(/waterbomb_project/image/payment_success/payment_success.jpg) no-repeat 100%/ cover;
+} */
+.sec02 .img-fluid {
+  width: 100%;
 }
 .sec03 {
   display: flex;
@@ -160,11 +172,12 @@ main {
   flex-direction: column;
   gap: 10px;
 }
-.caution {
+.sec03 .caution {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 10px;
-  border-top: #686868 solid 1px;
+  border-top: 1px dashed #686868;
 }
 footer {
   display: flex;
