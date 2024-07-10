@@ -31,13 +31,13 @@ body {
   padding: 0 20px;
   background-color: #000000;
   color: white;
-  height: 45px;
+  height: 50px;
   width: 100%;
 }
 .logo {
   display: flex;
-  width: 56px;
-  height: 27px;
+  width: 100px;
+  height: 35px;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
@@ -46,7 +46,7 @@ body {
 .logo span {
   color: #FFBF00;
   font-family: "MoveSans-Bold";
-  font-size: 8px;
+  font-size:13px;
   font-style: normal;
   font-weight: 500;
   line-height: 7px;
@@ -114,9 +114,16 @@ main {
   width: 100%;
   height: auto;
 }
-.notice {
+.sec01 .fa-circle-check{
+  font-size: 40px;
+  color: rgb(77 255 77)
+}
+.sec01 .notice {
   display: flex;
   flex-direction: column;
+}
+.sec01 .notice span{
+  font-size: 13px;
 }
 .sec02 {
   width: 100%;
@@ -151,11 +158,13 @@ main {
 .infoList {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 .caution {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border-top: #686868 solid 1px;
 }
 footer {
   display: flex;
@@ -172,7 +181,7 @@ footer .contents {
 }
 footer .contents p {
   text-align: center;
-  font-size: 9px;
+  font-size: 15px;
   line-height: 24px;
   /* 266.667% */
   margin: 0;
