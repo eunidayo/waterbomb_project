@@ -80,6 +80,8 @@ header .logo span {
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: -1;
+  pointer-events: none; /* 사용자가 비디오를 클릭할 수 없도록 함 */
+  -webkit-touch-callout: none; /* 모바일 사파리에서 비디오를 선택할 수 없도록 함 */
 }
 /* sec02 css 시작 */
 .sec02 {
