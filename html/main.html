@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- animate.css 임포트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="/waterbomb_project/css/main/main.css">
   <link rel="stylesheet" media="all and (max-width: 1199px)" href="/waterbomb_project/css/main/main_t.css">
   <title>main page</title>
@@ -104,6 +106,18 @@
         <!-- 자동 캐러셀 끝 -->
       </div>
     </section>
+    <!-- 바텀나브 -->
+    <div class="bottomNav">
+      <button id="myticket-btn" class="animate__animated animate__bounce animate__infinite animate__delay-2s">myticket
+        확인하기</button>
+      <div class="handlerBar"></div>
+      <div id="bottomNavContents" class="bottomNavContents">
+        <i id="close-btn" class="fa-solid fa-xmark fa-xl"></i>
+        <button>회원 구매</button>
+        <button>비회원 구매</button>
+      </div>
+    </div>
+    <!-- 바텀나브 끝 -->
   </main>
 
   <footer>
@@ -124,6 +138,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="/waterbomb_project/js/smooth_scroll_to_top.js"></script>
+  <script src="/waterbomb_project/js/bottom_nav.js"></script>
 </body>
 
 </html>
