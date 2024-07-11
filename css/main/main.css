@@ -37,83 +37,33 @@ body {
   /* max-width: 990px; */
 }
 /* 헤더 css 시작 */
-.navbar {
+header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 20px;
   background-color: #000000;
   color: white;
-  height: 45px;
+  height: 50px;
   width: 100%;
 }
-.logo {
+header .logo {
   display: flex;
-  width: 56px;
-  height: 27px;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  width: 100px;
+  height: 35px;
   border-radius: 5px;
   border: 2px solid #ffbf00;
 }
-.logo span {
+header .logo span {
   color: #ffbf00;
-  font-family: "MoveSans-Bold";
-  font-size: 8px;
-  font-style: normal;
+  font-family: MoveSans;
+  font-size: 13px;
   font-weight: 500;
-  line-height: 7px; /* 87.5% */
+  line-height: 7px;
 }
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-}
-.hamburger {
-  display: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-}
-.navRight {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.navRight a {
-  text-decoration: none;
-}
-.navRight a button {
-  display: flex;
-  height: 24px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  border-radius: 10px;
-  border-color: transparent;
-  background: #0aabff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
-  color: #000;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 21px; /* 175% */
-}
-.close-btn {
-  color: white;
-}
-.side-menu {
-  display: none;
-}
-/* 헤더 css 끝 */
 .sec01 {
   position: relative;
   width: 100%;
@@ -134,10 +84,8 @@ body {
 .sec02 {
   width: 100%;
   height: 540px;
-  background-image: url(/waterbomb_project/image/main/sec02_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(/waterbomb_project/image/main/sec02_bg.png) lightgray 0px 0px /
+    100% 100% no-repeat;
 }
 .sec02 .inner {
   display: flex;
@@ -147,10 +95,11 @@ body {
   gap: 70px;
   flex: 1 0 0;
 }
-.sec02 .inner button {
-  line-height: 21px;
+.sec02 .inner .buyTicket {
+  font-size: 18px;
   width: 139px;
   height: 30px;
+  line-height: 21px;
   border-radius: 10px;
   border-color: transparent;
   background: #17b0ff;
@@ -208,10 +157,8 @@ body {
   width: 100%;
   height: 350px;
   padding-top: 16px;
-  background-image: url(/waterbomb_project/image/main/sec03_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(/waterbomb_project/image/main/sec03_bg.png) lightgray 0px 0px /
+    100% 100% no-repeat;
 }
 .sec03 .contents {
   display: flex;
@@ -243,10 +190,10 @@ body {
   font-weight: 800;
   line-height: 21px; /* 105% */
 }
-.sec03 img {
-  position: relative;
+.carousel {
+  width: 320px;
+  height: auto;
 }
-
 footer {
   display: flex;
   justify-content: center;
