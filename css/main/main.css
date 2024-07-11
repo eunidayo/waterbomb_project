@@ -19,6 +19,7 @@
   font-family: "Open Sans", sans-serif;
   /* outline: 1px solid navy; */
 }
+/* 부트스트랩때문에 생기는 자동 마진 초기화 시키기 */
 p,
 h1,
 h2,
@@ -34,7 +35,6 @@ li {
 body {
   /* 320px 이하로 줄어들었을때 레이아웃 유지시키기 */
   min-width: 320px;
-  /* max-width: 990px; */
 }
 /* 헤더 css 시작 */
 header {
@@ -110,6 +110,7 @@ header .logo span {
   flex-direction: column;
   align-items: center;
   gap: 32px;
+  width: 100%;
 }
 .sec02 .contents .title {
   display: flex;
@@ -130,14 +131,16 @@ header .logo span {
 }
 .sec02 .contents .info {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 320px;
 }
 .sec02 .location h2 {
   color: #ffbf00;
   text-align: center;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 800;
   line-height: 21px; /* 95.455% */
+  padding-bottom: 10px;
 }
 .sec02 .date h2 {
   color: #fff;
@@ -145,12 +148,14 @@ header .logo span {
   font-size: 20px;
   font-weight: 700;
   line-height: 21px; /* 105% */
+  padding-bottom: 10px;
 }
-.sec02 .fa-circle-arrow-up {
+.fa-circle-arrow-up {
   color: white;
-  position: relative;
+  position: fixed;
   left: 90%;
-  bottom: 5%;
+  bottom: 60px;
+  z-index: 1;
 }
 /* sec03 css 시작 */
 .sec03 {
