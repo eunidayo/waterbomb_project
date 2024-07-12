@@ -18,6 +18,18 @@
   font-family: "Open Sans", sans-serif;
   /* outline: 1px solid navy; */
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
 /* 헤더 css 시작 */
 header {
   display: flex;

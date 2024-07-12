@@ -18,45 +18,92 @@
 </head>
 
 <body>
-  <nav class="navbar">
+  <header>
     <div class="logo"><span>WATERBOMB</span></div>
-    <ul class="nav-links">
-      <li><a href="/waterbomb_project/html/login.html">LOGIN</a></li>
-      <li><a href="/waterbomb_project/html/myticket.html">MY TICKET</a></li>
-      <li><a href="/waterbomb_project/html/mypage.html">MY PAGE</a></li>
-      <li><a href="#">2024 LINE-UP</a></li>
-    </ul>
-    <div class="navRight">
-      <a href="/waterbomb_project/html/myticket.html" class="myTicketBt"><button type="button">My Tickets</button></a>
-      <div class="hamburger">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </nav>
-  <div class="side-menu">
-    <span class="close-btn">&times;</span>
-    <ul>
-      <li><a href="/waterbomb_project/html/login.html">LOGIN</a></li>
-      <li><a href="/waterbomb_project/html/myticket.html">MY TICKET</a></li>
-      <li><a href="/waterbomb_project/html/login.html">MY PAGE</a></li>
-      <li><a href="#">2024 LINE-UP</a></li>
-    </ul>
-  </div>
+  </header>
   <main>
     <div class="container">
       <div class="tabs">
         <button class="tablink active" onclick="openTab(event, 'availableTickets')">사용 가능한 티켓</button>
         <button class="tablink" onclick="openTab(event, 'unavailableTickets')">사용 불가능한 티켓</button>
       </div>
-      <div id="availableTickets" class="tabcontent">
-        <p>사용 가능한 티켓이 없습니다.</p>
-        <a href="/waterbomb_project/html/ticket_selection.html"><button class="buyTickets">Buy Tickets</button></a>
+      <div id="availableTickets" class="tabcontent" style="display: block;">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- 첫 번째 티켓 -->
+            <div class="carousel-item active">
+              <div class="ticket">
+                <div class="top">
+                  <img src="/waterbomb_project/image/myticket/ticketTop.svg" alt="티켓 상단이미지" class="ticketTop">
+                </div>
+                <div class="qrContainer">
+                  <img src="/waterbomb_project/image/myticket/qrcode.png" alt="QR코드 이미지" class="ticketTop">
+                </div>
+                <div class="bottom">
+                  <img src="/waterbomb_project/image/myticket/ticketBottom.svg" alt="티켓 하단이미지">
+                  <div class="infoContainer">
+                    <p class="infoG">예매번호</p>
+                    <p class="infoB">2024000012987653</p>
+                    <p class="infoG">장소</p>
+                    <p class="infoB">SEOUL</p>
+                    <p class="infoG">날짜</p>
+                    <p class="infoB">2024.7.5</p>
+                    <p class="infoG">시간</p>
+                    <p class="infoB">14:00</p>
+                    <p class="infoG">좌석등급</p>
+                    <p class="infoB">vvip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 두 번째 티켓 -->
+            <div class="carousel-item">
+              <div class="ticket">
+                <div class="top">
+                  <img src="/waterbomb_project/image/myticket/ticketTop.svg" alt="티켓 상단이미지" class="ticketTop">
+                </div>
+                <div class="qrContainer">
+                  <img src="/waterbomb_project/image/myticket/qrcode.png" alt="QR코드 이미지" class="ticketTop">
+                </div>
+                <div class="bottom">
+                  <img src="/waterbomb_project/image/myticket/ticketBottom.svg" alt="티켓 하단이미지">
+                  <div class="infoContainer">
+                    <p class="infoG">예매번호</p>
+                    <p class="infoB">2024000012987654</p>
+                    <p class="infoG">장소</p>
+                    <p class="infoB">SEOUL</p>
+                    <p class="infoG">날짜</p>
+                    <p class="infoB">2024.7.6</p>
+                    <p class="infoG">시간</p>
+                    <p class="infoB">16:00</p>
+                    <p class="infoG">좌석등급</p>
+                    <p class="infoB">vip</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 추가 티켓들... -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
       <div id="unavailableTickets" class="tabcontent" style="display:none">
         <p>사용한 티켓이 없습니다.</p>
         <button class="buyTickets">Buy Tickets</button>
       </div>
-    </div>
   </main>
   <footer>
     <div class="contents">
@@ -77,4 +124,4 @@
   <script src="/waterbomb_project/js/myticket_empty.js"></script>
 </body>
 
-</html>
+</html>;
