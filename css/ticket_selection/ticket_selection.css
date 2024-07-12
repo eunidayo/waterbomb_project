@@ -3,12 +3,11 @@
 /* 로고 : MOVE Sans */
 @font-face {
   font-family: "MoveSans-Bold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2")
-    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
-/* 영문 : Sans serif  */
+/* 한글, 영문 : Sans serif  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 /* -----------------------------시작---------------------------- */
@@ -32,83 +31,174 @@ li {
   margin: 0;
 }
 /* 헤더 css 시작 */
-.navbar {
+header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 20px;
   background-color: #000000;
   color: white;
-  height: 45px;
+  height: 50px;
   width: 100%;
 }
-.logo {
+header .logo {
   display: flex;
-  width: 56px;
-  height: 27px;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  width: 100px;
+  height: 35px;
   border-radius: 5px;
   border: 2px solid #ffbf00;
 }
-.logo span {
+header .logo span {
   color: #ffbf00;
-  font-family: "MoveSans-Bold";
-  font-size: 8px;
-  font-style: normal;
+  font-family: MoveSans;
+  font-size: 13px;
   font-weight: 500;
-  line-height: 7px; /* 87.5% */
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-}
-.hamburger {
-  display: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-}
-.navRight {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.navRight a {
-  text-decoration: none;
-}
-.navRight a button {
-  display: flex;
-  height: 24px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
-  border-radius: 10px;
-  border-color: transparent;
-  background: #0aabff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
-  color: #000;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 21px; /* 175% */
-}
-.close-btn {
-  color: white;
-}
-.side-menu {
-  display: none;
+  line-height: 7px;
 }
 /* 헤더 css 끝 */
+
+.selectionBox {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 0 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 5px 0;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 30%;
+  width: 100%;
+  height: 100%;
+  border-color: transparent;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card > div {
+  display: flex;
+  width: 32px;
+  height: 15px;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid #FFF;
+}
+.card > div > h3 {
+  color: #FFF;
+  font-family: MoveSans;
+  font-size: 4px;
+  font-weight: 500;
+  line-height: 7px;
+}
+h2 {
+  font-size: 16px;
+  line-height: 12px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+h3 {
+  font-size: 4px;
+}
+p {
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 12px;
+}
+.card:nth-child(1) {
+  background: url(/waterbomb_project/image/ticket_selection/seoul1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(1):hover {
+  background: url(/waterbomb_project/image/ticket_selection/seoul2.jpg) no-repeat 100% / cover;
+
+}
+.card:nth-child(2) {
+  background: url(/waterbomb_project/image/ticket_selection/jeju1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(2):hover {
+  background: url(/waterbomb_project/image/ticket_selection/jeju2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(3) {
+  background: url(/waterbomb_project/image/ticket_selection/daegu1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(3):hover {
+  background: url(/waterbomb_project/image/ticket_selection/daegu2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(4) {
+  background: url(/waterbomb_project/image/ticket_selection/busan1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(4):hover {
+  background: url(/waterbomb_project/image/ticket_selection/busan2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(5) {
+  background: url(/waterbomb_project/image/ticket_selection/incheon1.jpg)no-repeat 100% / cover;
+}
+.card:nth-child(5):hover {
+  background: url(/waterbomb_project/image/ticket_selection/incheon2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(6) {
+  background: url(/waterbomb_project/image/ticket_selection/daejeon1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(6):hover {
+  background: url(/waterbomb_project/image/ticket_selection/daejeon2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(7) {
+  background: url(/waterbomb_project/image/ticket_selection/sokcho1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(7):hover {
+  background: url(/waterbomb_project/image/ticket_selection/sokcho2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(8) {
+  background: url(/waterbomb_project/image/ticket_selection/suwon1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(8):hover {
+  background: url(/waterbomb_project/image/ticket_selection/suwon2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(9) {
+  background: url(/waterbomb_project/image/ticket_selection/yeosu1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(9):hover {
+  background: url(/waterbomb_project/image/ticket_selection/yeosu2.jpg) no-repeat 100% / cover;
+}
+.calender {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #ffbf00;
+}
+.flatpickr-calendar {
+  display: block !important;
+  position: static !important;
+  visibility: visible;
+  opacity: 1;
+}
+#datepicker-container {
+  width: 100%;
+}
+.flatpickr-calendar.animate.inline {
+  width: 100%;
+}
+.count {
+  width: 100%;
+  height: 55px;
+  background-color: aquamarine;
+}
 /* footer css 시작 */
 footer {
   display: flex;
@@ -126,7 +216,8 @@ footer .contents {
 footer .contents p {
   text-align: center;
   font-size: 10px;
-  line-height: 24px; /* 266.667% */
+  line-height: 24px;
+  /* 266.667% */
   margin: 0;
 }
 footer .contents .icoGroup {
@@ -140,24 +231,3 @@ footer span {
   line-height: 24px;
 }
 /* footer css 끝 */
-.selectionBox {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px 0;
-}
-.location {
-  width: 100%;
-  height: 150px;
-  background-color: #0aabff;
-}
-.calender {
-  width: 100%;
-  height: 275px;
-  background-color: #ffbf00;
-}
-.count {
-  width: 100%;
-  height: 55px;
-  background-color: aquamarine;
-}
