@@ -33,7 +33,7 @@
           <span class="fw-semibold text-black">
             티켓 결제 완료
           </span>
-          <span class="description">"예약 확인을 위해 발급된<span class="reservationNo">예매번호</span> 와<span
+          <span class="description">"예약 확인을 위해 발급된<span class="reservationNo"> 예매번호</span>와 <span
               class="code">QR코드</span>를 저장하세요."</span></span>
 
 
@@ -48,12 +48,12 @@
         </span>
       </div>
     </section>
-    <section class="sec02"><img src="/waterbomb_project/image/payment_success/payment_success.jpg" class="img-fluid"
-        alt="waterbomb_img">
+    <section class="sec02">
+      <img src="/waterbomb_project/image/payment_success/payment_success.jpg" class="img-fluid" alt="waterbomb_img">
     </section>
     <section class="sec03">
       <div class="sec03Inner">
-        <div class="info">
+        <div class="info p-2">
           <div class="infoList">
             <div class="price">
               <span>결제금액</span>
@@ -69,44 +69,46 @@
             </div>
             <div class="location">
               <span>지역</span>
-              <div>SEOUL</div>
+              <div class="fw-bold">SEOUL</div>
             </div>
             <div class="seat">
               <span>좌석</span>
-              <div>VIP_BLUE</div>
+              <div class="fw-bold">VIP_BLUE</div>
             </div>
             <div class="date_time">
               <span>날짜, 시간</span>
-              <div>2024.7.5(SUN)</div>
+              <div class="fw-bold">2024.7.5(SUN)</div>
             </div>
           </div>
           <div class="infoQr">
             <div class="qr"><i class="fa-solid fa-qrcode"></i></div>
-            <div class="save">
+            <button class="save">
               <i class="fa-solid fa-download"></i>
-              <span>저장</span>
-            </div>
+              저장
+            </button>
           </div>
         </div>
-        <div class="caution p-3">
+        <div class="caution p-2">
           <span class="text-danger">#주의사항</span>
-          <span class="explanationPrecautions">
-            1)본 티켓은 별도로 배송되지 않는 E-TICKET(QR코드)입니다.
+
+          <span>
+            1&#41; 본 티켓은 별도로 배송되지 않는 E-TICKET(QR코드)입니다.
           </span>
           <span>
-            2)입장 QR코드는 예매자 정보를 기반으로 발송되며 방문자 정보와는 무관합니다.
+            2&rpar; 입장 QR코드는 예매자 정보를 기반으로 발송되며 방문자 정보와는 무관합니다.
           </span>
           <span>
-            3)본 QR코드로 별도의 예매내역 확인 없이 입장이 가능합니다.
+            3&rpar; 본 QR코드로 별도의 예매내역 확인 없이 입장이 가능합니다.
           </span>
           <span>
-            4)예매 내역 확인만으로는 입장에 제한이 있으며, 발급된 QR코드를 필히 준비해야합니다.
+            4&rpar; 예매 내역 확인만으로는 입장에 제한이 있으며, 발급된 QR코드를 필히 준비해야합니다.
           </span>
           <span>
-            5)본 페스티벌은 별도의 종이 티켓을 발권하지 않습니다.
+            5&rpar; 본 페스티벌은 별도의 종이 티켓을 발권하지 않습니다.
           </span>
         </div>
       </div>
+      <button type="button" class="btn_confirm bg-white bg-body-tertiary rounded">확인</button>
     </section>
   </main>
   <footer>
@@ -122,27 +124,6 @@
       </div>
       <span>© 2024 Festivl. All rights reserved.</span>
     </div>
-    <!-- <div style="overflow:hidden;">
-      <div class="form-group">
-        <div class="row">
-          <div class="col-md-8">
-            <div id="datetimepicker12">
-              dsv
-            </div>
-          </div>
-        </div>
-      </div>
-      <script type="text/javascript">
-        $(function () {
-          $('#datetimepicker12').datetimepicker({
-            inline: true,
-            sideBySide: true
-          });
-        });
-      </script>
-    </div> -->
-
-
   </footer>
 
   <!-- 부트스트랩 CDN 방식으로 임포트 -->
