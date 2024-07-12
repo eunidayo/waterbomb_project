@@ -97,6 +97,7 @@ header .logo span {
   align-items: center;
   gap: 70px;
   flex: 1 0 0;
+  position: relative;
 }
 .sec02 .inner .buyTicket {
   font-size: 20px;
@@ -107,6 +108,8 @@ header .logo span {
   border-color: transparent;
   background: #17b0ff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 4px;
 }
 .sec02 .contents {
   display: flex;
@@ -165,9 +168,26 @@ header .logo span {
 .fa-circle-arrow-up {
   color: white;
   position: fixed;
-  left: 90%;
-  bottom: 60px;
-  z-index: 1;
+  right: 33px;
+  bottom: 90px;
+  z-index: 9;
+}
+#myticket-btn {
+  position: fixed;
+  right: 10px;
+  bottom: 140px;
+  z-index: 9;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  border-color: transparent;
+  border-radius: 20px;
+  background-color: #f9dd68;
+  font-weight: 800;
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
 }
 /* sec03 css 시작 */
 .sec03 {
@@ -241,7 +261,7 @@ footer span {
   line-height: 24px;
 }
 /* 바텀시트 css 시작 */
-.bottomNav {
+/* .bottomNav {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -254,11 +274,12 @@ footer span {
   transition: transform 0.3s;
 }
 .bottomNav > button {
-  width: 130px;
-  height: 35px;
+  width: auto;
+  height: 100%;
+  padding: 10px;
   border-color: transparent;
   margin-bottom: 12px;
-  border-radius: 30px;
+  border-radius: 20px;
   background-color: #f9dd68;
   font-weight: 800;
 }
@@ -314,7 +335,7 @@ footer span {
   bottom: 80%;
   left: 90%;
   cursor: pointer;
-}
+} */
 /* 바텀시트 css 끝 */
 /* swiper css 시작 */
 .swiper {
