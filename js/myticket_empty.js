@@ -31,21 +31,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-// 사용 가능 티켓 탭구조
 function openTab(evt, tabName) {
-  let i, tabcontent, tablinks;
-  tabcontent = document.querySelectorAll(".tabcontent");
+  var i, tabcontent, tablinks;
+  // 모든 탭 콘텐츠를 숨깁니다.
+  tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  tablinks = document.querySelectorAll(".tablink");
+  // 모든 탭 링크에서 "active" 클래스를 제거합니다.
+  tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("active");
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
+  // 클릭된 탭 콘텐츠를 표시합니다.
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.classList.add("active");
+  // 클릭된 탭 링크에 "active" 클래스를 추가합니다.
+  evt.currentTarget.className += " active";
 }
-// 기본으로 첫 번째 탭 열기
+// 기본으로 첫 번째 탭을 표시합니다.
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".tablink").click();
+  // 사용 가능한 티켓 탭을 기본 활성화 상태로 설정
+  document.getElementById("availableTickets").style.display = "block";
+  var defaultTab = document.querySelector(".tablink");
+  if (defaultTab) {
+    defaultTab.className += " active";
+  }
 });
