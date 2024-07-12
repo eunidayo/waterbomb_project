@@ -51,15 +51,13 @@ header .logo span {
   font-weight: 500;
   line-height: 7px;
 }
-
 /* 메인 css 시작 */
 main {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
+  width: 100%;
   height: auto;
 }
-
 /* sec01 */
 .sec01 {
   display: flex;
@@ -93,7 +91,8 @@ main {
 .sec01 .notice .phoneNo {
   color: #0AABFF
 }
-.sec01 .notice {
+.sec01 .notice,
+.sec03 .sec03Inner .caution span {
   font-size: 12px;
   color: #686868;
 }
@@ -112,35 +111,86 @@ main {
   padding: 0px 10px 20px 10px;
   background: #0AABFF;
 }
-.sec03Inner {
+.sec03 .sec03Inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: auto;
+  /* height: auto; */
   gap: 10px;
-  padding: 10px 0px;
+  padding: 10px 20px;
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   border-bottom: 2px dashed #0AABFF;
 }
-.info {
+.sec03 .sec03Inner .info {
+  width: 100%;
   display: flex;
-  justify-content: center;
 }
-.infoList {
+.sec03 .sec03Inner .info .infoList {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
-.sec03 .caution {
+.sec03 .sec03Inner .info .infoList div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.sec03 .sec03Inner .info .infoQr {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.sec03 .sec03Inner .info .infoQr .qr {
+  display: flex;
+  width: 123px;
+  height: 123px;
+  border-radius: 5px;
+  border: 3px solid #4DFF4D;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.sec03 .sec03Inner .info .infoQr .fa-qrcode {
+  font-size: 120px;
+  display: flex;
+}
+.sec03 .sec03Inner .info .infoQr .save {
+  display: flex;
+  width: 123px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #E4E4E6;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease, color 0.3s ease;
+  font-size: 12px;
+  color: #686868;
+  background: #FDFDFD;
+}
+.sec03 .sec03Inner .info div {
+  font-size: 14px;
+}
+.sec03 .sec03Inner .caution {
   display: flex;
   width: 100%;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   border-top: 1px dashed #686868;
-  font-size: 12px;
+}
+.sec03 .btn_confirm {
+  display: flex;
+  width: 80px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
+  color: #686868;
+  transition: 0.2s ease, color 0.2s ease;
 }
 footer {
   display: flex;
@@ -159,7 +209,6 @@ footer .contents p {
   text-align: center;
   font-size: 15px;
   line-height: 24px;
-  /* 266.667% */
   margin: 0;
 }
 footer .contents .icoGroup {
