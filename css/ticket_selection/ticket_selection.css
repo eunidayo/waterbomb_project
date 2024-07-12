@@ -182,6 +182,10 @@ p {
 .flatpickr-calendar.animate.inline {
   width: 100%;
 }
+.flatpickr-innerContainer {
+  width: 100%;
+  justify-content: center;
+}
 .count {
   width: 100%;
   height: 55px;

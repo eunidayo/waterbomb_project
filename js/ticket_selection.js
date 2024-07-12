@@ -26,11 +26,10 @@ cardsData.forEach(card => {
 
 cardsContainer.innerHTML = cardsHTML;
 // datepicker script.js 파일
-document.addEventListener('DOMContentLoaded', function () {
-  flatpickr("#datepicker-container", {
-    inline: true, // 달력을 항상 표시
-    dateFormat: "Y-m-d",
-    minDate: "today",
-    locale: "ko"
-  });
+
+flatpickr("#datepicker-container", {
+  inline: true, // 달력을 항상 표시
+  dateFormat: "Y-m-d",
+  minDate: "today",
+  locale: 'ko',
 });
