@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
   /* outline: 1px solid navy; */
 }
 p,
@@ -85,9 +86,16 @@ html {
   display: flex;
   flex-direction: column;
 }
-.idGroup,
-.passwordGroup {
+.idGroup {
   margin-bottom: 15px;
+}
+.fa-eye {
+  position: relative;
+  bottom: 34px;
+  left: 42%;
+}
+.fa-eye-slash {
+  content: "\f070"; /* FontAwesome의 fa-eye-slash 아이콘 코드 */
 }
 .form-label {
   display: block;
@@ -117,24 +125,54 @@ html {
   justify-content: space-between;
   padding-top: 10px;
 }
-
 .accountLinks p {
   cursor: pointer;
   color: #fff;
 }
-
+.accountLinks p:nth-child(1)::after,
+.accountLinks p:nth-child(2)::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  color: white;
+}
 .accountLinks p:hover {
   text-decoration: underline;
 }
-
 .socialGroup {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   margin-top: 20px;
 }
-
+.iconGroup {
+  display: flex;
+  gap: 50px;
+}
 .socialGroup img {
   width: 40px; /* 아이콘의 크기를 조절할 수 있습니다 */
   height: 40px;
   cursor: pointer;
+}
+.guestBtnGroup {
+  display: flex;
+  gap: 10px;
+}
+.guestPurchaseBtn1,
+.guestPurchaseBtn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 122px;
+  height: 29px;
+  border-radius: 30px;
+  background: #fff;
+  border-color: transparent;
+  color: #000;
+  font-size: 14px;
+  line-height: 23px; /* 164.286% */
+}
+.fa-eye-slash::before {
+  content: "\f06e"; /* FontAwesome의 fa-eye-slash 아이콘 코드 */
 }

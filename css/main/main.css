@@ -168,13 +168,13 @@ header .logo span {
 .fa-circle-arrow-up {
   color: white;
   position: fixed;
-  right: 33px;
+  right: 50px;
   bottom: 90px;
   z-index: 9;
 }
 #myticket-btn {
   position: fixed;
-  right: 10px;
+  right: 27px;
   bottom: 140px;
   z-index: 9;
   width: auto;
