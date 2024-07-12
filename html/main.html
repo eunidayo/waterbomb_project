@@ -13,6 +13,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- animate.css 임포트 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- swiper.js 임포트 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/waterbomb_project/css/main/main.css">
   <link rel="stylesheet" media="all and (max-width: 1199px)" href="/waterbomb_project/css/main/main_t.css">
   <title>main page</title>
@@ -71,37 +73,23 @@
           <h3>2023</h3>
         </div>
         <!-- 자동 캐러셀 시작 -->
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/waterbomb_project/image/main/watergun.PNG" class="d-block w-100 h-100" alt="watergun">
-            </div>
-            <div class="carousel-item">
-              <img src="/waterbomb_project/image/main/adidas.PNG" class="d-block w-100" alt="adidas">
-            </div>
-            <div class="carousel-item">
-              <img src="/waterbomb_project/image/main/dara.PNG" class="d-block w-100" alt="dara">
-            </div>
-            <div class="carousel-item">
-              <img src="/waterbomb_project/image/main/dj.PNG" class="d-block w-100" alt="dj">
-            </div>
-            <div class="carousel-item">
-              <img src="/waterbomb_project/image/main/handsup.PNG" class="d-block w-100" alt="handsup">
-            </div>
-            <div class="carousel-item">
-              <img src="/waterbomb_project/image/main/jpark.PNG" class="d-block w-100" alt="jpark">
-            </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/waterbomb_project/image/main/adidas.PNG" alt=""></div>
+            <div class="swiper-slide"><img src="/waterbomb_project/image/main/dj.PNG" alt=""></div>
+            <div class="swiper-slide"><img src="/waterbomb_project/image/main/handsup.PNG" alt=""></div>
+            <div class="swiper-slide"><img src="/waterbomb_project/image/main/jpark.PNG" alt=""></div>
+            <div class="swiper-slide"><img src="/waterbomb_project/image/main/watergun.PNG" alt=""></div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
         </div>
         <!-- 자동 캐러셀 끝 -->
       </div>
@@ -133,12 +121,15 @@
       <span>© 2024 Festivl. All rights reserved.</span>
     </div>
   </footer>
-  <!-- 부트스트랩 CDN 방식으로 임포트 -->
+  <!-- 부트스트랩 임포트 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <!-- swiper.js 임포트 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/waterbomb_project/js/smooth_scroll_to_top.js"></script>
   <script src="/waterbomb_project/js/bottom_nav.js"></script>
+  <script src="/waterbomb_project/js/main_carousel.js"></script>
 </body>
 
 </html>
