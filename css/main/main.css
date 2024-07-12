@@ -52,18 +52,18 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  width: 100px;
+  width: auto;
   height: 35px;
+  padding: 0 10px;
   border-radius: 5px;
   border: 2px solid #ffbf00;
 }
 header .logo span {
   color: #ffbf00;
-  font-family: MoveSans;
-  font-size: 16px;
+  font-family: "MoveSans-Bold";
+  font-size: 20px;
   font-weight: 500;
-  line-height: 7px;
+  line-height: 7px; /* 53.846% */
 }
 .sec01 {
   position: relative;
@@ -168,13 +168,13 @@ header .logo span {
 .fa-circle-arrow-up {
   color: white;
   position: fixed;
-  right: 50px;
+  right: 40px;
   bottom: 90px;
   z-index: 9;
 }
 #myticket-btn {
   position: fixed;
-  right: 27px;
+  right: 17px;
   bottom: 140px;
   z-index: 9;
   width: auto;
