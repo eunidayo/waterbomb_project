@@ -63,9 +63,8 @@ header .logo span {
   align-items: center;
   gap: 10px;
   width: 100%;
-  font-size: 16px;
-  line-height: 23px;
-  /* 191.667% */
+  font-size: 18px;
+  font-weight: 600;
   border-bottom: 1px solid #e4e4e6;
 }
 .guestInfo {
@@ -78,6 +77,7 @@ header .logo span {
 }
 .guestInfo p {
   margin: 0;
+  font-weight: 600;
 }
 .guestInfo .info {
   display: flex;
@@ -89,10 +89,13 @@ header .logo span {
   border-radius: 5px;
   border: 1px solid #E4E4E6;
   background: #FFF;
+  align-items: baseline;
+
 }
 .guestInfo .info p {
   width: auto;
   margin: 0;
+  font-weight: 500;
 }
 .guestInfo .info span {
   width: auto;
@@ -107,6 +110,11 @@ header .logo span {
 }
 .confirmOrder p {
   margin: 0;
+  font-weight: 600;
+}
+.confirmOrder span {
+  color: #686868;
+  font-weight: 400;
 }
 .confirmOrder .order {
   display: flex;
@@ -129,10 +137,12 @@ header .logo span {
   width: 77px;
   justify-content: center;
   align-items: center;
-
   border-radius: 5px;
   background: rgba(255, 191, 0, 0.7);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.confirmOrder .order .orderContents .regionSchedule p {
+  font-weight: 500;
 }
 .paymentMethod {
   display: flex;
@@ -141,6 +151,7 @@ header .logo span {
 }
 .paymentMethod p {
   margin: 0;
+  font-weight: 600;
 }
 .paymentMethod .payList {
   display: flex;
@@ -160,7 +171,7 @@ header .logo span {
 }
 .paymentMethod .payList article p {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 .totalAmount {
   display: flex;
@@ -179,6 +190,7 @@ header .logo span {
 }
 .totalLabel p {
   margin: 0;
+  font-weight: 600;
 }
 .btnConfirm {
   display: flex;
@@ -190,16 +202,17 @@ header .logo span {
 .btnConfirm a {
   display: flex;
   width: 100px;
-  height: 24px;
+  height: 32px;
   padding: 10px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 10px;
+  border-radius: 30px;
   color: #000;
   text-decoration: none;
   background: #0AABFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
 }
 .btnConfirm a:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -221,7 +234,7 @@ footer .contents {
 }
 footer .contents p {
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 24px;
   /* 266.667% */
   margin: 0;
@@ -233,7 +246,7 @@ footer .contents .icoGroup {
 }
 footer span {
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 24px;
 }
 /* footer css 끝 */
