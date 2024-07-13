@@ -7,6 +7,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
 /* 한글, 영문 : Sans serif  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
@@ -18,6 +19,7 @@
   font-family: "Open Sans", sans-serif;
   /* outline: 1px solid navy; */
 }
+
 p,
 h1,
 h2,
@@ -30,6 +32,11 @@ li {
   padding: 0;
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
 /* 헤더 css 시작 */
 header {
   display: flex;
@@ -41,6 +48,7 @@ header {
   height: 50px;
   width: 100%;
 }
+
 header .logo {
   display: flex;
   justify-content: center;
@@ -51,6 +59,7 @@ header .logo {
   border-radius: 5px;
   border: 2px solid #ffbf00;
 }
+
 header .logo span {
   color: #ffbf00;
   font-family: MoveSans;
@@ -58,6 +67,7 @@ header .logo span {
   font-weight: 500;
   line-height: 7px;
 }
+
 /* 헤더 css 끝 */
 
 .selectionBox {
@@ -65,12 +75,14 @@ header .logo span {
   flex-direction: column;
   padding: 5px 0 0 0;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 0 5px 0;
 }
+
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -78,6 +90,7 @@ header .logo span {
   width: 100%;
   height: 100%;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -88,10 +101,12 @@ header .logo span {
   height: 100%;
   border-color: transparent;
 }
+
 .card:hover {
   cursor: pointer;
 }
-.card > div {
+
+.card>div {
   display: flex;
   width: 32px;
   height: 15px;
@@ -99,100 +114,127 @@ header .logo span {
   border-radius: 5px;
   border: 2px solid #FFF;
 }
-.card > div > h3 {
+
+.card>div>h3 {
   color: #FFF;
   font-family: MoveSans;
   font-size: 4px;
   font-weight: 500;
   line-height: 7px;
 }
+
 h2 {
   font-size: 16px;
   line-height: 12px;
   font-weight: 700;
   margin-bottom: 0;
 }
+
 h3 {
   font-size: 4px;
 }
+
 p {
   font-size: 9px;
   font-weight: 500;
   line-height: 12px;
 }
+
 .card:nth-child(1) {
   background: url(/waterbomb_project/image/ticket_selection/seoul1.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(1):hover {
   background: url(/waterbomb_project/image/ticket_selection/seoul2.jpg) no-repeat 100% / cover;
-
 }
+
 .card:nth-child(2) {
   background: url(/waterbomb_project/image/ticket_selection/jeju1.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(2):hover {
   background: url(/waterbomb_project/image/ticket_selection/jeju2.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(3) {
   background: url(/waterbomb_project/image/ticket_selection/daegu1.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(3):hover {
   background: url(/waterbomb_project/image/ticket_selection/daegu2.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(4) {
   background: url(/waterbomb_project/image/ticket_selection/busan1.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(4):hover {
   background: url(/waterbomb_project/image/ticket_selection/busan2.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(5) {
   background: url(/waterbomb_project/image/ticket_selection/incheon1.jpg)no-repeat 100% / cover;
 }
+
 .card:nth-child(5):hover {
   background: url(/waterbomb_project/image/ticket_selection/incheon2.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(6) {
   background: url(/waterbomb_project/image/ticket_selection/daejeon1.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(6):hover {
   background: url(/waterbomb_project/image/ticket_selection/daejeon2.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(7) {
   background: url(/waterbomb_project/image/ticket_selection/sokcho1.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(7):hover {
   background: url(/waterbomb_project/image/ticket_selection/sokcho2.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(8) {
   background: url(/waterbomb_project/image/ticket_selection/suwon1.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(8):hover {
   background: url(/waterbomb_project/image/ticket_selection/suwon2.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(9) {
   background: url(/waterbomb_project/image/ticket_selection/yeosu1.jpg) no-repeat 100% / cover;
 }
+
 .card:nth-child(9):hover {
   background: url(/waterbomb_project/image/ticket_selection/yeosu2.jpg) no-repeat 100% / cover;
 }
+
 .calender {
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
 }
+
 .flatpickr-calendar {
   display: block !important;
   position: static !important;
   visibility: visible;
   opacity: 1;
 }
+
 .flatpickr-innerContainer {
   width: 100%;
   justify-content: center;
 }
 
-/* 이전 스타일 유지 */
+.flatpickr-months {
+  position: relative;
+}
+
 .selection-info {
   display: flex;
   flex-direction: column;
@@ -239,6 +281,7 @@ p {
   height: auto;
   gap: 10px;
 }
+
 .countPick,
 .price {
   display: flex;
@@ -249,24 +292,29 @@ p {
   background: var(--Neutral-True-White, #FFF);
   box-shadow: 0px 2px 16px 0px rgba(6, 51, 54, 0.10);
 }
+
 .countPick span,
 .price span {
   font-size: 16px;
   font-weight: 700;
   line-height: 135%;
 }
+
 .quantity {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
+
 .fa-regular {
   cursor: pointer;
 }
+
 .fa-square-minus {
   color: #CCD4DE;
 }
+
 .fa-square-plus {
   color: #70B9BE;
 }
@@ -279,6 +327,7 @@ p {
   align-items: center;
   background: #FFF;
 }
+
 .payBt {
   display: flex;
   width: 110px;
@@ -291,12 +340,14 @@ p {
   background: #0AABFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 /* footer css 시작 */
 footer {
   display: flex;
   justify-content: center;
   background-color: #000;
 }
+
 footer .contents {
   display: flex;
   flex-direction: column;
@@ -305,6 +356,7 @@ footer .contents {
   padding: 10px 0;
   color: #fff;
 }
+
 footer .contents p {
   text-align: center;
   font-size: 10px;
@@ -312,14 +364,17 @@ footer .contents p {
   /* 266.667% */
   margin: 0;
 }
+
 footer .contents .icoGroup {
   display: flex;
   gap: 20px;
   padding: 10px 0;
 }
+
 footer span {
   text-align: center;
   font-size: 10px;
   line-height: 24px;
 }
+
 /* footer css 끝 */
