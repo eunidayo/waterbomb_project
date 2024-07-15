@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
-.nav-links {
+body {
+  min-width: 767px;
+}
+/* .nav-links {
   display: none;
 }
 .hamburger {
@@ -52,4 +55,4 @@
 .overlay.active {
   display: block;
   opacity: 1;
-}
+} */

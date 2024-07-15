@@ -34,7 +34,9 @@ li {
 }
 body {
   /* 320px 이하로 줄어들었을때 레이아웃 유지시키기 */
-  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 /* 헤더 css 시작 */
@@ -136,8 +138,7 @@ header .logo span {
 }
 .sec02 .contents .info {
   display: flex;
-  justify-content: space-between;
-  width: 320px;
+  gap: 50px;
 }
 .sec02 .location {
   display: flex;
@@ -174,7 +175,7 @@ header .logo span {
 }
 #myticket-btn {
   position: fixed;
-  right: 17px;
+  right: 20px;
   bottom: 140px;
   z-index: 9;
   width: auto;
@@ -216,16 +217,21 @@ header .logo span {
   color: #fff;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 800;
   line-height: 21px;
 }
 .sec03 .title h3 {
-  color: #fff;
   text-align: center;
   font-size: 20px;
   font-weight: 800;
   line-height: 21px; /* 105% */
+
+  /* 폰트에 그라데이션효과 입히기 */
+  background-image: linear-gradient(to right, #c0c0c0, #ededed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .carousel {
   width: 320px;
