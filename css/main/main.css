@@ -252,8 +252,8 @@ footer .contents {
 }
 footer .contents p {
   text-align: center;
-  font-size: 14px;
-  line-height: 24px; /* 266.667% */
+  font-size: 15px;
+  line-height: 24px;
   margin: 0;
 }
 footer .contents .icoGroup {
@@ -263,7 +263,7 @@ footer .contents .icoGroup {
 }
 footer span {
   text-align: center;
-  font-size: 7px;
+  font-size: 15px;
   line-height: 24px;
 }
 /* 바텀시트 css 시작 */
