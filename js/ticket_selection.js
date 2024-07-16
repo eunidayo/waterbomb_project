@@ -22,9 +22,8 @@ cardsData.forEach((card, index) => {
       </div>
   `;
 });
-// cardsData 를 반복문을 돌림, 각 카드는 card라는 이름으로 불르고.배열의 몇 번째 카드인지를 index라는 이름으로 불름 cardsData는 총0~8번까지 9개의 인덱스가 저장되어있으니까 9장의 카드가 나올것이고 각각의 카드는 cardHTML안에서 각 카드의 인덱스를 가져와서, 각 카드 <div>에 data-index 속성으로 index를 저장하고 card의 logo,year,location,date를 가져와서 cardHTML에 추가해줌.
+// cardsData 를 반복문을 돌림, 각 카드는 card라는 이름으로 불르고.배열의 몇 번째 카드인지를 index라는 이름으로 불름 cardsData는 총0~8번까지 9개의 인덱스가 저장되어있으니까 9장의 index가 나올것이고 각각의 카드는 cardHTML안에서 각 카드의 인덱스를 가져와서, 각 카드 <div>에 data-index 속성으로 index를 저장하고/ card의 logo,year,location,date를 가져와서 cardHTML에 추가해줌.
 
-// cardsContainer 요소의 내부 HTML을 cardsHTML 변수에 저장된 내용으로 설정함, 즉 카드들을 작성해줌 >> 반복문 돌린놈들을 html에 다가 작성해준다는 뜻.
 
 const cardsContainer = document.querySelector('#cards-container');
 const selectedCardEl = document.querySelector('#selected-card');
@@ -64,12 +63,12 @@ document.querySelectorAll('.card').forEach(card => {
       defaultDate: selectedCard.dates[0],
       // 달력 이동을 위한 초기 날짜 설정
       onChange: function (selectedDates, dateStr) {
-        if (selectedCard.dates.includes(dateStr)) {
-          selectedDateEl.textContent = dateStr;
-        } else {
-          alert('다른 날짜를 입력해주세요!');
-        }
+        selectedCard.dates.includes(dateStr) ? selectedDateEl.textContent = dateStr : alert('다른 날짜를 입력해주세요!');
+        console.log(selectedDates);
       }
+      // 매개변수로 두개를 받지만 따지고 보면 dateStr만 사용이됨
+      // selectedCard.dates 배열에 dateStr 값이 포함되어 있는지 확인.
+      // includes 메서드는 dateStr가 selectedCard.dates 배열에 존재하면 true를 반환 dateStr을 selectedDateEl에 작성, 존재하지 않으면 false를 반환.
     });
   });
 });
@@ -88,12 +87,18 @@ const plusBtn = document.querySelector('.fa-square-plus');
 const totalQuantity = document.querySelector('.totalQuantity');
 const totalPrice = document.querySelector('.totalPrice span');
 const unitPrice = 110000; // 단위 가격 설정
+// 각각의 변수에 각각의 클래스 이름에 해당하는 부분을 찾아서 변수에 저장
 
 function updatePrice() {
+  // 수량과 가격을 업데이트 하는 함수를 정의함 
   const quantity = parseInt(totalQuantity.textContent, 10);
+  // 정수로 변환 하여 quantity에 저장 ,10 : 10진수로 변환 한다는 뜻
   const price = quantity * unitPrice;
+  // 변환된 정수와 unitPrice 를 곱해서 price에 저장;
   totalPrice.textContent = `${price.toLocaleString()} 원`;
+  // // 총합 가격의 텍스트 내용을 price 값으로 설정하고, 숫자를 지역 형식으로 변환
   selectedQuantityEl.textContent = quantity;
+  // // selectedQuantityEl의 텍스트 내용을 quantity 값으로 설정해요.
 }
 
 minusBtn.addEventListener('click', () => {
@@ -104,6 +109,7 @@ minusBtn.addEventListener('click', () => {
     updatePrice();
   }
 });
+// 마이너스 버튼을 클릭했을 때 수량이 0보다 크다면 수량에서 -1을 뺀값을 totalQuantity에 추가하고 그값을 quantity에 할당한 행동이 일어난다.
 
 plusBtn.addEventListener('click', () => {
   let quantity = parseInt(totalQuantity.textContent, 10);
@@ -111,6 +117,7 @@ plusBtn.addEventListener('click', () => {
   totalQuantity.textContent = quantity;
   updatePrice();
 });
+// 마이너스 버튼과 반대라고 생각하면됨
 
 // 페이지 로드 시 초기 수량 및 가격 설정
 totalQuantity.textContent = '0';
