@@ -69,7 +69,6 @@ header .logo span {
 }
 
 /* 헤더 css 끝 */
-
 .selectionBox {
   display: flex;
   flex-direction: column;
@@ -106,13 +105,18 @@ header .logo span {
   cursor: pointer;
 }
 
+/* 카드 선택 시 스타일 추가 */
+.card.selected {
+  border: 2px solid #ffbf00;
+}
+
+/* 여기서 부터는 js파일에 해당하는 card라는 클래스에 css 를 준부분 */
 .card>div {
   display: flex;
   width: 32px;
   height: 15px;
   justify-content: center;
   border-radius: 5px;
-  border: 2px solid #FFF;
 }
 
 .card>div>h3 {
@@ -219,11 +223,18 @@ p {
   height: auto;
 }
 
+/* flatpickr 로 클래스명이 써져 있는 부분들은 브라우저에서 f12를 누르거나
+html <head> 태그 안에 flatpickr css 를 들어가서 보면 확인이 가능 하긴함. f12 추천. */
 .flatpickr-calendar {
   display: block !important;
+  /* !important 는 가장 우선순위로 놓을 때 씀 */
   position: static !important;
+  /* 위치를 고정시켜놓고 싶을때 씀 */
   visibility: visible;
+  /* 요소를 보이게 하겠다는 뜻 원래 기존의 달력은 안보이게 되어있었는데 보이게 설정 한거임
+   / 안보이게 하는 요소로는 hidden 이나 collapse도 있음 */
   opacity: 1;
+  /* 불투명도 1일때는 보인다는 뜻 숨겨진 요소를 꺼내올 때 쓰는 용도 */
 }
 
 .flatpickr-innerContainer {
@@ -233,29 +244,9 @@ p {
 
 .flatpickr-months {
   position: relative;
-}
-
-.selection-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background: var(--Neutral-True-White, #FFF);
-  border-radius: 16px;
-  box-shadow: 0px 2px 16px 0px rgba(6, 51, 54, 0.10);
-  padding: 10px;
-  margin-top: 10px;
-}
-
-.selection-info span {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.selected-info p {
-  font-size: 14px;
-  margin: 5px 0;
+  /* 여기서 relative를 준이유는.flatpickr-months의 자식요소 중 next prev 버튼이 absolute 처리가 되어 있는데
+  relative를 만나지 못하게 되면 결국 가장 상위 객체인 body 까지 이어지기 때문에 버튼의 위치가 이상해질 수 있음
+  그래서 월을 선택 하는 곳에서 버튼이 보이게 하기위해 적용해놓음*/
 }
 
 .totalQuantity,
@@ -263,13 +254,6 @@ p {
 .selected-info span {
   font-weight: 700;
 }
-
-/* 카드 선택 시 스타일 추가 */
-.card.selected,
-.card:hover {
-  border: 2px solid #ffbf00;
-}
-
 
 .count {
   display: flex;
@@ -317,6 +301,29 @@ p {
 
 .fa-square-plus {
   color: #70B9BE;
+}
+
+.selection-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: var(--Neutral-True-White, #FFF);
+  border-radius: 16px;
+  box-shadow: 0px 2px 16px 0px rgba(6, 51, 54, 0.10);
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.selection-info span {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.selected-info p {
+  font-size: 14px;
+  margin: 5px 0;
 }
 
 .payment {
