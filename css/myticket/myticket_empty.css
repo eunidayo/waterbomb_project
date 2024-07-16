@@ -60,7 +60,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
   background-color: #000;
   color: #fff;
   border-radius: 10px;

@@ -203,6 +203,7 @@ header .logo span {
 }
 .terms p {
   padding: 10px 20px;
+  margin: 0;
 }
 .btnConfirm {
   display: flex;
