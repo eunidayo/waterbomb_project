@@ -34,18 +34,19 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  width: 100px;
+  width: auto;
   height: 35px;
+  padding: 0 10px;
   border-radius: 5px;
   border: 2px solid #ffbf00;
 }
 header .logo span {
   color: #ffbf00;
-  font-family: MoveSans;
-  font-size: 13px;
+  font-family: "MoveSans-Bold";
+  font-size: 20px;
   font-weight: 500;
   line-height: 7px;
+  /* 53.846% */
 }
 /* 헤더 css 끝 */
 /* 메인 css 시작 */
@@ -59,7 +60,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 700px;
+  height: auto;
   background-color: #000;
   color: #fff;
   border-radius: 10px;
@@ -121,9 +122,27 @@ main {
   color: #000;
   margin: 0;
   text-align: left;
+  font-size: 16px;
 }
 .tabcontent .infoContainer .infoB {
   font-weight: 800;
+}
+.btnConfrim {
+  position: absolute;
+  bottom: 20%;
+  transform: translate(-50%, -50%);
+  background-color: #4DFF4D;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btnConfrim:hover {
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  color: #4DFF4D;
 }
 .tablink {
   background-color: #000;
@@ -161,24 +180,57 @@ main {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 /* 캐러셀 커스텀 */
-.carousel-control-prev,
-.carousel-control-next {
-  height: 100px;
-  top: 44%;
-  transform: translateY(-50%);
+.swiper-button-next, .swiper-button-prev, .swiper-pagination-fraction {
+  color: #fff;
 }
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: -48px;
-  left: 0;
-  z-index: 2;
+.swiper {
+  width: 100%;
+}
+.swiper-wrapper {
+  height: 600px;
+}
+.swiper-slide {
   display: flex;
   justify-content: center;
-  padding: 0;
-  margin-right: 15%;
-  margin-bottom: 1rem;
-  margin-left: 15%;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+}
+.swiper-button-next {
+  position: absolute;
+  top: 45%;
+}
+.swiper-button-prev {
+  position: absolute;
+  top: 45%;
+}
+/* 모바일 화면에서 티켓 크기 조정 */
+@media (max-width: 400px) {
+  .tabs .tablink {
+    font-size: 12px;
+  }
+  .tabcontent .ticket {
+    width: 100%;
+  }
+  .tabcontent .top img,
+  .tabcontent .bottom img {
+    width: 100%;
+    height: auto;
+  }
+  .tabcontent .bottom::before {
+    width: 200px;
+  }
+  .tabcontent .infoContainer {
+    width: 48%;
+    top: 50%;
+  }
+  .tabcontent .infoContainer p {
+    font-size: 14px;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
 }
 /* 메인 css 끝 */
 /* 풋터 시작 */

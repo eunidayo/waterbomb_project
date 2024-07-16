@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myticket_empty</title>
   <!-- 부트스트랩 임포트 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -11,10 +12,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- 스와이퍼 임포트 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="/waterbomb_project/css/myticket/myticket_empty.css">
   <link rel="stylesheet" media="all and (max-width: 1199px)"
     href="/waterbomb_project/css/myticket/myticket_empty_t.css">
-  <title>myticket_empty</title>
 </head>
 
 <body>
@@ -28,16 +30,9 @@
         <button class="tablink" onclick="openTab(event, 'unavailableTickets')">사용 불가능한 티켓</button>
       </div>
       <div id="availableTickets" class="tabcontent" style="display: block;">
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner">
-            <!-- 첫 번째 티켓 -->
-            <div class="carousel-item active">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <div class="ticket">
                 <div class="top">
                   <img src="/waterbomb_project/image/myticket/ticketTop.svg" alt="티켓 상단이미지" class="ticketTop">
@@ -62,8 +57,7 @@
                 </div>
               </div>
             </div>
-            <!-- 두 번째 티켓 -->
-            <div class="carousel-item">
+            <div class="swiper-slide">
               <div class="ticket">
                 <div class="top">
                   <img src="/waterbomb_project/image/myticket/ticketTop.svg" alt="티켓 상단이미지" class="ticketTop">
@@ -79,31 +73,27 @@
                     <p class="infoG">장소</p>
                     <p class="infoB">SEOUL</p>
                     <p class="infoG">날짜</p>
-                    <p class="infoB">2024.7.6</p>
+                    <p class="infoB">2024.7.5</p>
                     <p class="infoG">시간</p>
-                    <p class="infoB">16:00</p>
+                    <p class="infoB">14:00</p>
                     <p class="infoG">좌석등급</p>
-                    <p class="infoB">vip</p>
+                    <p class="infoB">vvip</p>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- 추가 티켓들... -->
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
+        <button class="btnConfrim">예매확인</button>
       </div>
       <div id="unavailableTickets" class="tabcontent" style="display:none">
         <p>사용한 티켓이 없습니다.</p>
         <button class="buyTickets">Buy Tickets</button>
       </div>
+    </div>
   </main>
   <footer>
     <div class="contents">
@@ -122,6 +112,20 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="/waterbomb_project/js/myticket_empty.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Swiper 초기화
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
-</html>;
+</html>
