@@ -20,13 +20,14 @@
     </div>
     <div class="logo"><span>WATERBOMB</span></div>
     <div class="loginContainer">
+      <!-- 유효성 검사를 위해 form 태그로 묶어둠 -->
       <form action="/login" method="POST">
         <div class="idGroup">
-          <input type="text" id="id" name="id" class="loginInput" placeholder="아이디">
+          <input type="text" name="id" class="loginInput" placeholder="아이디">
         </div>
         <div class="passwordGroup">
-          <input type="password" id="password" name="password" class="passwordInput" placeholder="비밀번호">
-          <i class="fa-solid fa-eye" id="togglePassword"></i>
+          <input type="password" name="password" class="passwordInput" placeholder="비밀번호">
+          <i class="fa-solid fa-eye togglePassword"></i>
         </div>
         <button type="submit" class="formButton">로그인</button>
       </form>
