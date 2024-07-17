@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/confetti.css">
-  <!-- flatpickr의 테마를 confetti 냐 dark 냐 등 조절할 수 있는 css -->
   <link rel="stylesheet" href="/waterbomb_project/css/ticket_selection/ticket_selection.css">
   <link rel="stylesheet" media="all and (max-width: 1199px)"
     href="/waterbomb_project/css/ticket_selection/ticket_selection_t.css">
@@ -26,8 +23,8 @@
       <div class="container">
         <div id="cards-container" class="cards-container"></div>
       </div>
-      <div class="calender">
-        <div id="datepicker-container"></div>
+      <div class="calendar-container">
+        <div id="calendar"></div>
       </div>
       <div class="count">
         <div class="countPick">
@@ -53,7 +50,7 @@
           </div>
         </div>
         <div class="payment">
-          <a href="login.html"><button type="button" class="payBt">결제하기</button></a>
+          <a href="/waterbomb_project/html/login.html"><button type="button" class="payBt">결제하기</button></a>
         </div>
       </div>
     </div>
@@ -74,6 +71,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/l10n/ko.min.js"></script>
+  <script src="/waterbomb_project/js/ticket_selection_datepicker.js"></script>
   <script src="/waterbomb_project/js/ticket_selection.js"></script>
 </body>
 
