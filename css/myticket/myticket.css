@@ -1,28 +1,232 @@
 @charset "UTF-8";
-
 /* 로고 : MOVE Sans */
 @font-face {
   font-family: "MoveSans-Bold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2")
-    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
-/* 한글 : 배달의민족 도현체  */
-@font-face {
-  font-family: "BMDOHYEON";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-/* 영문 : Sans serif  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-
-/* -----------------------------시작---------------------------- */
 * {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* outline: 1px solid navy; */
+}
+body {
+  /* 320px 이하로 줄어들었을때 레이아웃 유지시키기 */
+  min-width: 320px;
+  /* max-width: 990px; */
+}
+/* 헤더 css 시작 */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #000000;
+  color: white;
+  height: 50px;
+  width: 100%;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 2px solid #FFBF00;
+}
+header .logo span {
+  color: #FFBF00;
+  font-family: "MoveSans-Bold";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 7px;
+  /* 53.846% */
+}
+/* 헤더 css 끝 */
+/* 메인 css 시작 */
+main {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+}
+.tabs .tablink {
+  font-size: 14px;
+}
+.btnConfrim {
+  position: absolute;
+  bottom: 20%;
+  transform: translate(-50%, -50%);
+  background-color: #4DFF4D;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btnConfrim:hover {
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  color: #4DFF4D;
+}
+.tablink {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 50%;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+}
+.tablink.active {
+  color: #4DFF4D;
+  border-bottom: 2px solid #4DFF4D;
+}
+.tabcontent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+.buyTickets {
+  background-color: #00A8FF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 230px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.buyTickets:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+/* 캐러셀 커스텀 */
+.swiper-container {
+  position: relative;
+}
+.swiper-button-next, .swiper-button-prev, .swiper-pagination-fraction {
+  color: #4DFF4D;
+}
+.swiper {
+  width: 100%;
+  position: initial;
+}
+.swiper.mySwiper {
+  display: flex;
+}
+.swiper-slide {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+}
+.swiper-button-next {
+  position: absolute;
+  top: 45%;
+  right: -34px;
+}
+.swiper-button-prev {
+  position: absolute;
+  top: 45%;
+  left: -35px;
+}
+.ticket-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.ticket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(/waterbomb_project/image/myticket/ticket.png) no-repeat 50% 0% / contain;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 100%;
+  height: auto;
+}
+
+.qr-code {
+  font-size: 80px;
+  text-align: center;
+}
+.confirm-btn {
+  background-color: #4DFF4D;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* 메인 css 끝 */
+/* 풋터 시작 */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+footer .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  color: #fff;
+}
+footer .contents p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  /* 266.667% */
+  margin: 0;
+}
+footer .contents .icoGroup {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+footer span {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+}
+.tapContainer {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+}
+.nav-item {
+  width: auto;
 }

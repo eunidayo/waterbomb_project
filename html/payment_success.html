@@ -21,65 +21,70 @@
     <div class="logo"><span>WATERBOMB</span></div>
   </header>
 
-
   <!-- 메인 -->
   <main>
     <section class="sec01 p-3">
+
+      <div class="paymentCompleted">
       <i class="fa-regular fa-circle-check"></i>
-      <div class="notice">
-        <span class="paymentCompleted">
-          <span class="fw-semibold text-black">
+
+          <h2 class="fw-semibold text-black">
             티켓 결제 완료
-          </span>
-          <span class="description">"예약 확인을 위해 발급된<span class="reservationNo"> 예매번호</span>와 <span
-              class="code">QR코드</span>를 저장하세요."</span></span>
+          </h2>
+
+          <p class="description">"예약 확인을 위해 발급된<span> 예매번호</span>와 <span>QR코드</span>를 저장하세요."</p>
+</div>
 
 
-        <span> &#8226; 회원인 경우, <span class="myTickets">My Tickets</span>에서 예매내역을 확인하세요.</span>
+ <div class="notice">
+        <p> &#8226; 회원인 경우, <span>My Tickets</span>에서 예매내역을 확인하세요.</p>
 
 
-        <span> &#8226; 비회원인 경우, <span class="reservationNo">예매번호</span> 또는 결제시 사용한 <span class="phoneNo">핸드폰 번호</span>를
-          입력하여 예매 내역을 확인하세요.</span>
+        <p> &#8226; 비회원인 경우, <span>예매번호</span> 또는 결제시 사용한 <span>핸드폰 번호</span>를
+          입력하여 예매 내역을 확인하세요.</p>
 
         <span class="fw-semibold text-black">
           예매번호 0282-0626-3039-955
         </span>
       </div>
     </section>
+
     <section class="sec02">
-      <img src="/waterbomb_project/image/payment_success/payment_success.jpg" class="img-fluid" alt="waterbomb_img">
+      <!-- <img src="/waterbomb_project/image/payment_success/payment_success.jpg" class="img-fluid" alt="waterbomb_img"> -->
+            <!-- <img src="/waterbomb_project/image/payment_success/payment_success.jpg"alt="waterbomb_img"> -->
     </section>
     <section class="sec03">
       <div class="sec03Inner">
         <div class="info p-2">
           <div class="infoList">
             <div class="price">
-              <span>결제금액</span>
-              <div>220,000원</div>
+              <p>결제금액</p>
+              <span class="fw-bold">220,000원</span>
             </div>
             <div class="pay_date">
-              <span>결제일자</span>
-              <div>2024.6.30</div>
+              <p>결제일자</p>
+              <span class="fw-bold">2024.6.30</span>
             </div>
             <div class="pay">
-              <span>결제수단</span>
-              <div>카카오페이(3177)</div>
+              <p>결제수단</p>
+              <span class="fw-bold">카카오페이(3177)</span>
             </div>
             <div class="location">
-              <span>지역</span>
-              <div class="fw-bold">SEOUL</div>
+              <p>지역</p>
+              <span class="fw-bold">SEOUL</span>
             </div>
             <div class="seat">
-              <span>좌석</span>
-              <div class="fw-bold">VIP_BLUE</div>
+              <p>좌석</p>
+              <span class="fw-bold">VIP_BLUE</span>
             </div>
             <div class="date_time">
-              <span>날짜, 시간</span>
-              <div class="fw-bold">2024.7.5(SUN)</div>
+              <p>날짜, 시간</p>
+              <span class="fw-bold">2024.7.5(SUN)</span>
             </div>
           </div>
           <div class="infoQr">
-            <div class="qr"><i class="fa-solid fa-qrcode"></i></div>
+            <!-- <div class="qr"><i class="fa-solid fa-qrcode"></i></div> -->
+            <div class="qr"><img src="/waterbomb_project/image/payment_success/qrcode.png" class="img-fluid" alt="qrcode"></div>
             <button class="save">
               <i class="fa-solid fa-download"></i>
               저장
@@ -106,11 +111,12 @@
           </span>
         </div>
       </div>
-      <button type="button" class="btn_confirm bg-white bg-body-tertiary rounded">확인</button>
+
+      <a href="/waterbomb_project/html/myticket.html"><button type="button" class="btn_confirm bg-white bg-body-tertiary rounded"> 확인 </button>
+    </a>
     </section>
   </main>
   <footer>
-
     <div class="contents">
       <p>Terms of Use</p>
       <p>Privacy Policy</p>
