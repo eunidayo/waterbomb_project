@@ -14,9 +14,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- 스와이퍼 임포트 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/waterbomb_project/css/myticket/myticket_empty.css">
-  <link rel="stylesheet" media="all and (max-width: 1199px)"
-    href="/waterbomb_project/css/myticket/myticket_empty_t.css">
+  <link rel="stylesheet" href="/waterbomb_project/css/myticket/myticket.css">
+  <link rel="stylesheet" media="all and (max-width: 1199px)" href="/waterbomb_project/css/myticket/myticket_t.css">
 </head>
 
 <body>
@@ -31,63 +30,12 @@
       </div>
       <div id="availableTickets" class="tabcontent" style="display: block;">
         <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="ticket">
-                <div class="top">
-                  <img src="/waterbomb_project/image/myticket/ticketTop.svg" alt="티켓 상단이미지" class="ticketTop">
-                </div>
-                <div class="qrContainer">
-                  <img src="/waterbomb_project/image/myticket/qrcode.png" alt="QR코드 이미지" class="ticketTop">
-                </div>
-                <div class="bottom">
-                  <img src="/waterbomb_project/image/myticket/ticketBottom.svg" alt="티켓 하단이미지">
-                  <div class="infoContainer">
-                    <p class="infoG">예매번호</p>
-                    <p class="infoB">2024000012987653</p>
-                    <p class="infoG">장소</p>
-                    <p class="infoB">SEOUL</p>
-                    <p class="infoG">날짜</p>
-                    <p class="infoB">2024.7.5</p>
-                    <p class="infoG">시간</p>
-                    <p class="infoB">14:00</p>
-                    <p class="infoG">좌석등급</p>
-                    <p class="infoB">vvip</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="ticket">
-                <div class="top">
-                  <img src="/waterbomb_project/image/myticket/ticketTop.svg" alt="티켓 상단이미지" class="ticketTop">
-                </div>
-                <div class="qrContainer">
-                  <img src="/waterbomb_project/image/myticket/qrcode.png" alt="QR코드 이미지" class="ticketTop">
-                </div>
-                <div class="bottom">
-                  <img src="/waterbomb_project/image/myticket/ticketBottom.svg" alt="티켓 하단이미지">
-                  <div class="infoContainer">
-                    <p class="infoG">예매번호</p>
-                    <p class="infoB">2024000012987654</p>
-                    <p class="infoG">장소</p>
-                    <p class="infoB">SEOUL</p>
-                    <p class="infoG">날짜</p>
-                    <p class="infoB">2024.7.5</p>
-                    <p class="infoG">시간</p>
-                    <p class="infoB">14:00</p>
-                    <p class="infoG">좌석등급</p>
-                    <p class="infoB">vvip</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="swiper-wrapper" id="tickets-container">
+            <!-- 티켓들이 여기 들어감 -->
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
         </div>
-        <button class="btnConfrim">예매확인</button>
       </div>
       <div id="unavailableTickets" class="tabcontent" style="display:none">
         <p>사용한 티켓이 없습니다.</p>
@@ -111,21 +59,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="/waterbomb_project/js/myticket_empty.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    // Swiper 초기화
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+  <script src="/waterbomb_project/js/myticket.js"></script>
 </body>
 
 </html>

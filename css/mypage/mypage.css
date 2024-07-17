@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* 구글아이콘 (google font */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+/* 로고 : MOVE Sans */
+@font-face {
+  font-family: "MoveSans-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* 영문 : Sans serif  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+/* -----------------------------시작---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  /* outline: 1px solid navy; */
+}
+/* 부트스트랩때문에 생기는 자동 마진 초기화 시키기 */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  /* 320px 이하로 줄어들었을때 레이아웃 유지시키기 */
+  min-width: 320px;
+}
+/* 헤더 css 시작 */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #000000;
+  color: white;
+  height: 50px;
+  width: 100%;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 2px solid #ffbf00;
+}
+header .logo span {
+  color: #ffbf00;
+  font-family: "MoveSans-Bold";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 7px; /* 53.846% */
+}
+/* 메인 css 시작 */
+/* main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+} */
+.mypageTop .material-symbols-outlined:nth-child(1) {
+font-size: 35px;
+}
+.mypageDetails{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    padding: 20px 30px 30px;
+    gap:50px;
+    background-color: #000000;
+}
+.mypageTop{
+    display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.mypageProfile{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+align-items: center;
+}
+h2{
+  font-size: 30px;
+}
+button {
+  display: flex;
+  width: 60px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
+  color: #686868;
+  transition: 0.2s ease, color 0.2s ease;
+}
+.category{
+display: flex;
+flex-direction: column;
+gap: 30px;
+cursor: pointer;
+}
+.category a{
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+  }
+  footer .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    color: #fff;
+  }
+  footer .contents p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+  }
+  footer .contents .icoGroup {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  footer span {
+    text-align: center;
+    font-size: 7px;
+    line-height: 24px;
+  }
