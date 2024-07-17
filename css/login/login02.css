@@ -10,6 +10,7 @@
 }
 /* 영문, 국문 : Sans serif  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 /* -----------------------------시작---------------------------- */
 * {
   margin: 0;
@@ -86,7 +87,9 @@ html {
   position: relative;
   bottom: 34px;
   left: 42%;
-  cursor: pointer;
+}
+.fa-eye-slash {
+  content: "\f070"; /* FontAwesome의 fa-eye-slash 아이콘 코드 */
 }
 .form-label {
   display: block;
@@ -109,9 +112,6 @@ html {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-}
-.formButton:hover {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4) inset;
 }
 .accountLinks {
   display: flex;
@@ -165,22 +165,17 @@ html {
   display: flex;
   gap: 10px;
 }
-.guestBtnGroup a {
-  text-decoration: none;
-}
-.guestPurchaseBtn1 {
+.guestPurchaseBtn1,
+.guestPurchaseBtn2 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 122px;
   height: 29px;
   border-radius: 30px;
-  border: 1px solid #e4e4e6;
   background: #fff;
+  border-color: transparent;
   color: #000;
   font-size: 16px;
   line-height: 23px; /* 164.286% */
-}
-.guestPurchaseBtn1:hover {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }

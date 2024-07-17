@@ -20,14 +20,13 @@
     </div>
     <div class="logo"><span>WATERBOMB</span></div>
     <div class="loginContainer">
-      <!-- 유효성 검사를 위해 form 태그로 묶어둠 -->
       <form action="/login" method="POST">
         <div class="idGroup">
-          <input type="text" name="id" class="loginInput" placeholder="아이디">
+          <input type="text" id="id" name="id" class="loginInput" placeholder="아이디">
         </div>
         <div class="passwordGroup">
-          <input type="password" name="password" class="passwordInput" placeholder="비밀번호">
-          <i class="fa-solid fa-eye togglePassword"></i>
+          <input type="password" id="password" name="password" class="passwordInput" placeholder="비밀번호">
+          <i class="fa-solid fa-eye" id="togglePassword"></i>
         </div>
         <button type="submit" class="formButton">로그인</button>
       </form>
@@ -43,8 +42,7 @@
           <img src="/waterbomb_project/image/iogin/naver.png" alt="네이버 로고">
         </div>
         <div class="guestBtnGroup">
-          <a href="/waterbomb_project/html/ticket_selection.html"><button class="guestPurchaseBtn1">비회원
-              구매하기</button></a>
+          <button class="guestPurchaseBtn1">비회원 구매하기</button>
         </div>
       </div>
     </div>

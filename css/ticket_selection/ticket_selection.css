@@ -3,8 +3,7 @@
 /* 로고 : MOVE Sans */
 @font-face {
   font-family: "MoveSans-Bold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2")
-    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -112,7 +111,7 @@ header .logo span {
 }
 
 /* 여기서 부터는 js파일에 해당하는 card라는 클래스에 css 를 준부분 */
-.card > div {
+.card>div {
   display: flex;
   width: 32px;
   height: 15px;
@@ -120,8 +119,8 @@ header .logo span {
   border-radius: 5px;
 }
 
-.card > div > h3 {
-  color: #fff;
+.card>div>h3 {
+  color: #FFF;
   font-family: MoveSans;
   font-size: 4px;
   font-weight: 500;
@@ -146,93 +145,75 @@ p {
 }
 
 .card:nth-child(1) {
-  background: url(/waterbomb_project/image/ticket_selection/seoul1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/seoul1.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(1):hover {
-  background: url(/waterbomb_project/image/ticket_selection/seoul2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/seoul2.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(2) {
-  background: url(/waterbomb_project/image/ticket_selection/jeju1.jpg) no-repeat
-    100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/jeju1.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(2):hover {
-  background: url(/waterbomb_project/image/ticket_selection/jeju2.jpg) no-repeat
-    100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/jeju2.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(3) {
-  background: url(/waterbomb_project/image/ticket_selection/daegu1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/daegu1.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(3):hover {
-  background: url(/waterbomb_project/image/ticket_selection/daegu2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/daegu2.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(4) {
-  background: url(/waterbomb_project/image/ticket_selection/busan1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/busan1.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(4):hover {
-  background: url(/waterbomb_project/image/ticket_selection/busan2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/busan2.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(5) {
-  background: url(/waterbomb_project/image/ticket_selection/incheon1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/incheon1.jpg)no-repeat 100% / cover;
 }
 
 .card:nth-child(5):hover {
-  background: url(/waterbomb_project/image/ticket_selection/incheon2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/incheon2.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(6) {
-  background: url(/waterbomb_project/image/ticket_selection/daejeon1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/daejeon1.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(6):hover {
-  background: url(/waterbomb_project/image/ticket_selection/daejeon2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/daejeon2.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(7) {
-  background: url(/waterbomb_project/image/ticket_selection/sokcho1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/sokcho1.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(7):hover {
-  background: url(/waterbomb_project/image/ticket_selection/sokcho2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/sokcho2.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(8) {
-  background: url(/waterbomb_project/image/ticket_selection/suwon1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/suwon1.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(8):hover {
-  background: url(/waterbomb_project/image/ticket_selection/suwon2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/suwon2.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(9) {
-  background: url(/waterbomb_project/image/ticket_selection/yeosu1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/yeosu1.jpg) no-repeat 100% / cover;
 }
 
 .card:nth-child(9):hover {
-  background: url(/waterbomb_project/image/ticket_selection/yeosu2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/yeosu2.jpg) no-repeat 100% / cover;
 }
 
 .calender {
@@ -292,8 +273,8 @@ html <head> 태그 안에 flatpickr css 를 들어가서 보면 확인이 가능
   justify-content: space-between;
   width: 100%;
   border-radius: 16px;
-  background: var(--Neutral-True-White, #fff);
-  box-shadow: 0px 2px 16px 0px rgba(6, 51, 54, 0.1);
+  background: var(--Neutral-True-White, #FFF);
+  box-shadow: 0px 2px 16px 0px rgba(6, 51, 54, 0.10);
 }
 
 .countPick span,
@@ -315,11 +296,11 @@ html <head> 태그 안에 flatpickr css 를 들어가서 보면 확인이 가능
 }
 
 .fa-square-minus {
-  color: #ccd4de;
+  color: #CCD4DE;
 }
 
 .fa-square-plus {
-  color: #70b9be;
+  color: #70B9BE;
 }
 
 .selection-info {
@@ -327,9 +308,9 @@ html <head> 태그 안에 flatpickr css 를 들어가서 보면 확인이 가능
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: var(--Neutral-True-White, #fff);
+  background: var(--Neutral-True-White, #FFF);
   border-radius: 16px;
-  box-shadow: 0px 2px 16px 0px rgba(6, 51, 54, 0.1);
+  box-shadow: 0px 2px 16px 0px rgba(6, 51, 54, 0.10);
   padding: 10px;
   margin-top: 10px;
 }
@@ -351,7 +332,7 @@ html <head> 태그 안에 flatpickr css 를 들어가서 보면 확인이 가능
   padding: 10px;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: #FFF;
 }
 
 .payBt {
@@ -363,11 +344,8 @@ html <head> 태그 안에 flatpickr css 를 들어가서 보면 확인이 가능
   align-items: center;
   border-radius: 10px;
   border: inherit;
-  background: #0aabff;
+  background: #0AABFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.payBt:hover {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 /* footer css 시작 */

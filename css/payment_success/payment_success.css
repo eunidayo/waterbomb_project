@@ -2,8 +2,7 @@
 /* 로고 : MOVE Sans */
 @font-face {
   font-family: "MoveSans-Bold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2")
-    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -70,7 +69,7 @@ main {
 }
 .sec01 .fa-circle-check {
   font-size: 40px;
-  color: #4dff4d;
+  color: #4DFF4D
 }
 .sec01 .notice {
   display: flex;
@@ -90,7 +89,7 @@ main {
 .sec01 .notice .reservationNo,
 .sec01 .notice .myTickets,
 .sec01 .notice .phoneNo {
-  color: #0aabff;
+  color: #0AABFF
 }
 .sec01 .notice,
 .sec03 .sec03Inner .caution span {
@@ -110,7 +109,7 @@ main {
   align-items: center;
   gap: 20px;
   padding: 0px 10px 20px 10px;
-  background: #0aabff;
+  background: #0AABFF;
 }
 .sec03 .sec03Inner {
   display: flex;
@@ -123,7 +122,7 @@ main {
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  border-bottom: 2px dashed #0aabff;
+  border-bottom: 2px dashed #0AABFF;
 }
 .sec03 .sec03Inner .info {
   width: 100%;
@@ -150,7 +149,7 @@ main {
   width: 123px;
   height: 123px;
   border-radius: 5px;
-  border: 3px solid #4dff4d;
+  border: 3px solid #4DFF4D;
   justify-content: center;
   justify-content: center;
   align-items: center;
@@ -164,13 +163,13 @@ main {
   width: 123px;
   height: 25px;
   border-radius: 5px;
-  border: 1px solid #e4e4e6;
+  border: 1px solid #E4E4E6;
   justify-content: center;
   align-items: center;
   transition: 0.3s ease, color 0.3s ease;
   font-size: 12px;
   color: #686868;
-  background: #fdfdfd;
+  background: #FDFDFD;
 }
 .sec03 .sec03Inner .info div {
   font-size: 14px;
@@ -192,9 +191,6 @@ main {
   box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
   color: #686868;
   transition: 0.2s ease, color 0.2s ease;
-}
-.sec03 a {
-  text-decoration: none;
 }
 footer {
   display: flex;

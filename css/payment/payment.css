@@ -46,19 +46,18 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
+  gap: 10px;
+  width: 100px;
   height: 35px;
-  padding: 0 10px;
   border-radius: 5px;
   border: 2px solid #ffbf00;
 }
 header .logo span {
   color: #ffbf00;
-  font-family: "MoveSans-Bold";
-  font-size: 20px;
+  font-family: MoveSans;
+  font-size: 13px;
   font-weight: 500;
   line-height: 7px;
-  /* 53.846% */
 }
 /* 헤더 css 끝 */
 /* main css 시작 */
@@ -115,9 +114,9 @@ header .logo span {
 }
 .confirmOrder {
   display: flex;
-  padding: 10px;
+  padding: 0px 10px;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 .confirmOrder p {
   margin: 0;
@@ -126,7 +125,6 @@ header .logo span {
 .confirmOrder span {
   color: #686868;
   font-weight: 400;
-  font-size: 14px;
 }
 .confirmOrder .order {
   display: flex;
@@ -155,7 +153,6 @@ header .logo span {
 }
 .confirmOrder .order .orderContents .regionSchedule p {
   font-weight: 500;
-  font-size: 12px;
 }
 .paymentMethod {
   display: flex;
@@ -169,7 +166,6 @@ header .logo span {
 .paymentMethod .payList {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
 }
 .paymentMethod .payList article {
   display: flex;
@@ -182,15 +178,10 @@ header .logo span {
   gap: 10px;
   border-radius: 5px;
   border: 2px solid #e4e4e6;
-  cursor: pointer;
-  transition: border-color 0.3s;
-}
-.paymentMethod .payList article.selected {
-  border-color: #4DFF4D;
 }
 .paymentMethod .payList article p {
   margin: 0;
-  font-size: 10px;
+  font-size: 14px;
 }
 .totalAmount {
   display: flex;
@@ -210,10 +201,6 @@ header .logo span {
 .totalLabel p {
   margin: 0;
   font-weight: 600;
-}
-.terms p {
-  padding: 10px 20px;
-  margin: 0;
 }
 .btnConfirm {
   display: flex;
