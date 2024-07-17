@@ -73,58 +73,7 @@ main {
   background-color: #000;
 }
 .tabs .tablink {
-  font-size: 16px;
-}
-.tabcontent .ticket {
-  width: 100%;
-}
-.tabcontent .top {
-  position: relative;
-}
-.tabcontent .top img {
-  width: 280px;
-  height: 100%;
-}
-.tabcontent .qrContainer {
-  position: absolute;
-  top: 28%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.tabcontent .qrContainer img {
-  width: 100px;
-  height: 100px;
-}
-.tabcontent .bottom {
-  position: relative;
-}
-.tabcontent .bottom::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 224px;
-  border-top: 4px dashed #fff;
-}
-.tabcontent .bottom img {
-  width: 280px;
-  height: 280px;
-}
-.tabcontent .infoContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.tabcontent .infoContainer p {
-  color: #000;
-  margin: 0;
-  text-align: left;
-  font-size: 16px;
-}
-.tabcontent .infoContainer .infoB {
-  font-weight: 800;
+  font-size: 14px;
 }
 .btnConfrim {
   position: absolute;
@@ -162,9 +111,6 @@ main {
   padding: 20px;
   text-align: center;
 }
-.tabcontent p {
-  margin: 20px 0;
-}
 .buyTickets {
   background-color: #00A8FF;
   border: none;
@@ -179,23 +125,22 @@ main {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 /* 캐러셀 커스텀 */
+.swiper-container {
+  position: relative;
+}
 .swiper-button-next, .swiper-button-prev, .swiper-pagination-fraction {
-  color: #fff;
+  color: #4DFF4D;
 }
 .swiper {
   width: 100%;
+  position: initial;
 }
 .swiper.mySwiper {
   display: flex;
-  position: relative;
-}
-.swiper-button-next,
-.swiper-button-prev {}
-.swiper-wrapper {
-  height: 600px;
 }
 .swiper-slide {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   font-size: 18px;
@@ -204,10 +149,12 @@ main {
 .swiper-button-next {
   position: absolute;
   top: 45%;
+  right: -34px;
 }
 .swiper-button-prev {
   position: absolute;
   top: 45%;
+  left: -35px;
 }
 .ticket-container {
   display: flex;
@@ -217,25 +164,21 @@ main {
   gap: 10px;
 }
 .ticket {
-
-  background: url(/waterbomb_project/image/myticket/ticket.png) no-repeat 50% 0% / contain;
-
-
-  color: #000;
-  border-radius: 10px;
-  padding: 20px 20px;
-  width: 280px;
-  height: auto;
-}
-.ticket-footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url(/waterbomb_project/image/myticket/ticket.png) no-repeat 50% 0% / contain;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 100%;
+  height: auto;
 }
+
 .qr-code {
-  font-size: 100px;
+  font-size: 80px;
   text-align: center;
-  margin: 20px 0;
 }
 .confirm-btn {
   background-color: #4DFF4D;
@@ -246,34 +189,7 @@ main {
   cursor: pointer;
   font-size: 16px;
 }
-/* 모바일 화면에서 티켓 크기 조정 */
-@media (max-width: 600px) {
-  .tabs .tablink {
-    font-size: 12px;
-  }
-  .tabcontent .ticket {
-    width: 100%;
-  }
-  .tabcontent .top img,
-  .tabcontent .bottom img {
-    width: 100%;
-    height: auto;
-  }
-  .tabcontent .bottom::before {
-    width: 200px;
-  }
-  .tabcontent .infoContainer {
-    width: 48%;
-    top: 50%;
-  }
-  .tabcontent .infoContainer p {
-    font-size: 14px;
-  }
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    display: none;
-  }
-}
+
 /* 메인 css 끝 */
 /* 풋터 시작 */
 footer {
@@ -313,8 +229,4 @@ footer span {
 }
 .nav-item {
   width: auto;
-}
-
-.swiper-slide {
-  height: 60vh;
 }
