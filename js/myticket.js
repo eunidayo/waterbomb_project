@@ -57,21 +57,15 @@ function loadTickets() {
     ticketsHTML += `
       <div class="swiper-slide">
         <div class="ticket">
-          <div class="ticket-body">
             <div class="qr-code">
-              <i class="fas fa-qrcode"></i>
+            <img src="/waterbomb_project/image/myticket/qrcode.png" alt="qr">
             </div>
-            <div class="ticket-info">
-              <p>예매번호: ${ticket.bookingNumber}</p>
+              <p>예매번호:<br> ${ticket.bookingNumber}</p>
               <p>장소: ${ticket.location}</p>
               <p>날짜: ${ticket.date}</p>
               <p>시간: ${ticket.time}</p>
               <p>좌석 등급: ${ticket.seatGrade}</p>
-            </div>
-          </div>
-          <div class="ticket-footer">
             <button class="confirm-btn"> <i class="fa-solid fa-download"></i>저장</button>
-          </div>
         </div>
       </div>
     `;
