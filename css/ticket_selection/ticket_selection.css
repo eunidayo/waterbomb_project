@@ -49,10 +49,28 @@ header {
   width: 100%;
 }
 
+
+
+
 header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: auto;
+  height: 35px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 2px solid #ffbf00;
+}
+header .logo span {
+  color: #ffbf00;
+  font-family: "MoveSans-Bold";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 7px;
+  /* 53.846% */
+}
   gap: 10px;
   width: 100px;
   height: 35px;
@@ -72,6 +90,196 @@ header .logo span {
 .selectionBox {
   display: flex;
   flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0 0 0;
+}
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 767px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 5px 0;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 30%;
+  width: 100%;
+  height: 100%;
+  border-color: transparent;
+}
+.card:hover {
+  cursor: pointer;
+}
+/* 카드 선택 시 스타일 추가 */
+.card.selected {
+  border: 2px solid #ffbf00;
+}
+/* 여기서 부터는 js파일에 해당하는 card라는 클래스에 css 를 준부분 */
+.card > div {
+  display: flex;
+  width: 32px;
+  height: 15px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.card > div > h3 {
+  color: #FFF;
+  font-family: MoveSans;
+  font-size: 4px;
+  font-weight: 500;
+  line-height: 7px;
+}
+h2 {
+  font-size: 16px;
+  line-height: 12px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+h3 {
+  font-size: 4px;
+}
+p {
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 12px;
+}
+.card:nth-child(1) {
+  background: url(/waterbomb_project/image/ticket_selection/seoul1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(1):hover {
+  background: url(/waterbomb_project/image/ticket_selection/seoul2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(2) {
+  background: url(/waterbomb_project/image/ticket_selection/jeju1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(2):hover {
+  background: url(/waterbomb_project/image/ticket_selection/jeju2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(3) {
+  background: url(/waterbomb_project/image/ticket_selection/daegu1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(3):hover {
+  background: url(/waterbomb_project/image/ticket_selection/daegu2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(4) {
+  background: url(/waterbomb_project/image/ticket_selection/busan1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(4):hover {
+  background: url(/waterbomb_project/image/ticket_selection/busan2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(5) {
+  background: url(/waterbomb_project/image/ticket_selection/incheon1.jpg)no-repeat 100% / cover;
+}
+.card:nth-child(5):hover {
+  background: url(/waterbomb_project/image/ticket_selection/incheon2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(6) {
+  background: url(/waterbomb_project/image/ticket_selection/daejeon1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(6):hover {
+  background: url(/waterbomb_project/image/ticket_selection/daejeon2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(7) {
+  background: url(/waterbomb_project/image/ticket_selection/sokcho1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(7):hover {
+  background: url(/waterbomb_project/image/ticket_selection/sokcho2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(8) {
+  background: url(/waterbomb_project/image/ticket_selection/suwon1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(8):hover {
+  background: url(/waterbomb_project/image/ticket_selection/suwon2.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(9) {
+  background: url(/waterbomb_project/image/ticket_selection/yeosu1.jpg) no-repeat 100% / cover;
+}
+.card:nth-child(9):hover {
+  background: url(/waterbomb_project/image/ticket_selection/yeosu2.jpg) no-repeat 100% / cover;
+}
+.calendar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#calendar {
+  width: 100%;
+  max-width: 767px;
+  /* max-width를 적절한 크기로 설정 */
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  /* margin 조정 */
+}
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.calendar-header h2 {
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  /* gap을 줄여서 더 촘촘하게 배치 */
+}
+.calendar-day,
+.calendar-weekday {
+  padding: 5px;
+  /* 패딩 줄이기 */
+  text-align: center;
+  border-radius: 4px;
+  font-size: 0.875em;
+  /* 폰트 크기 줄이기 */
+}
+.calendar-day {
+  cursor: pointer;
+  font-weight: bold;
+}
+.calendar-day:hover {
+  background-color: #f0f0f0;
+}
+.calendar-day.selected {
+  background-color: #0AABFF;
+  color: white;
+}
+.calendar-day.today {
+  border: 2px solid #0AABFF;
+  font-weight: bold;
+}
+*/ .totalQuantity,
+.totalPrice span,
+.selected-info span {
+  font-weight: 700;
+}
+.count {
+  display: flex;
   padding: 5px 0 0 0;
 }
 
@@ -262,9 +470,14 @@ html <head> 태그 안에 flatpickr css 를 들어가서 보면 확인이 가능
   padding: 15px;
   align-items: center;
   width: 100%;
+  max-width: 767px;
+  gap: 10px;
+}
+
   height: auto;
   gap: 10px;
 }
+
 
 .countPick,
 .price {
@@ -272,6 +485,11 @@ html <head> 태그 안에 flatpickr css 를 들어가서 보면 확인이 가능
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  height: 54px;
+  padding: 20px;
+
+
   border-radius: 16px;
   background: var(--Neutral-True-White, #FFF);
   box-shadow: 0px 2px 16px 0px rgba(6, 51, 54, 0.10);
@@ -282,6 +500,66 @@ html <head> 태그 안에 flatpickr css 를 들어가서 보면 확인이 가능
   font-size: 16px;
   font-weight: 700;
   line-height: 135%;
+
+}
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.fa-regular {
+  cursor: pointer;
+}
+.fa-square-minus {
+  color: #CCD4DE;
+}
+.fa-square-plus {
+  color: #70B9BE;
+}
+.selection-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: var(--Neutral-True-White, #FFF);
+  border-radius: 16px;
+  box-shadow: 0px 2px 16px 0px rgba(6, 51, 54, 0.10);
+}
+.selection-info span {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.selected-info p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.payment {
+  display: flex;
+  width: 216px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+}
+.payBt {
+  display: flex;
+  width: 110px;
+  height: 30px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: inherit;
+  background: #0AABFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.payBt:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+
 }
 
 .quantity {
@@ -347,6 +625,7 @@ html <head> 태그 안에 flatpickr css 를 들어가서 보면 확인이 가능
   background: #0AABFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 
 /* footer css 시작 */
 footer {

@@ -9,9 +9,14 @@ const cardsData = [
   { location: 'SUWON', logo: 'WATERBOMB', year: '2024', date: '2024.5.17 (FRI-SUN)', dates: ['2024-05-17', '2024-05-18', '2024-05-19'] },
   { location: 'YEOSU', logo: 'WATERBOMB', year: '2024', date: '2024.8.10 (SAT)', dates: ['2024-08-10'] }
 ];
+
+
+let cardsHTML = '';
+
 // 배열안에는 값만 넣을 수 있고 객체 안에는 키와 값을 넣을 수 있는데 제이슨형식으로 배열안에 값으로 객체들을 집어넣었음, 각 객체는 지역 ,년도, 요일, 날짜를 포함함
 let cardsHTML = '';
 // cardsHTML 이라는 변수를 공백으로 두고 그 공백 안에
+
 cardsData.forEach((card, index) => {
   cardsHTML += `
       <div class="card" data-index="${index}">
@@ -22,14 +27,130 @@ cardsData.forEach((card, index) => {
       </div>
   `;
 });
+
+
 // cardsData 를 반복문을 돌림, 각 카드는 card라는 이름으로 불르고.배열의 몇 번째 카드인지를 index라는 이름으로 불름 cardsData는 총0~8번까지 9개의 인덱스가 저장되어있으니까 9장의 카드가 나올것이고 각각의 카드는 cardHTML안에서 각 카드의 인덱스를 가져와서, 각 카드 <div>에 data-index 속성으로 index를 저장하고 card의 logo,year,location,date를 가져와서 cardHTML에 추가해줌.
 
 // cardsContainer 요소의 내부 HTML을 cardsHTML 변수에 저장된 내용으로 설정함, 즉 카드들을 작성해줌 >> 반복문 돌린놈들을 html에 다가 작성해준다는 뜻.
+
 
 const cardsContainer = document.querySelector('#cards-container');
 const selectedCardEl = document.querySelector('#selected-card');
 const selectedDateEl = document.querySelector('#selected-date');
 const selectedQuantityEl = document.querySelector('#selected-quantity');
+
+cardsContainer.innerHTML = cardsHTML;
+
+document.addEventListener('DOMContentLoaded', function () {
+  const calendarElement = document.getElementById('calendar');
+  const today = new Date();
+  let selectedDate = today;
+
+  const weekDays = ['일', '월', '화', '수', '목', '금', '토'];
+
+  function renderCalendar(year, month, enabledDates = [], defaultDate) {
+    calendarElement.innerHTML = '';
+
+    const calendarHeader = document.createElement('div');
+    calendarHeader.className = 'calendar-header';
+
+    const prevButton = document.createElement('button');
+    prevButton.innerHTML = '&lt;';
+    prevButton.addEventListener('click', () => {
+      const prevMonth = new Date(year, month - 1, 1);
+      renderCalendar(prevMonth.getFullYear(), prevMonth.getMonth(), enabledDates, defaultDate);
+    });
+
+    const nextButton = document.createElement('button');
+    nextButton.innerHTML = '&gt;';
+    nextButton.addEventListener('click', () => {
+      const nextMonth = new Date(year, month + 1, 1);
+      renderCalendar(nextMonth.getFullYear(), nextMonth.getMonth(), enabledDates, defaultDate);
+    });
+
+    const monthYearDisplay = document.createElement('h2');
+    monthYearDisplay.textContent = `${year}년 ${month + 1}월`;
+
+    calendarHeader.appendChild(prevButton);
+    calendarHeader.appendChild(monthYearDisplay);
+    calendarHeader.appendChild(nextButton);
+
+    const calendarGrid = document.createElement('div');
+    calendarGrid.className = 'calendar-grid';
+
+    // 요일 표시
+    weekDays.forEach(day => {
+      const weekDayCell = document.createElement('div');
+      weekDayCell.className = 'calendar-weekday';
+      weekDayCell.textContent = day;
+      calendarGrid.appendChild(weekDayCell);
+    });
+
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const startDay = new Date(year, month, 1).getDay();
+
+    for (let i = 0; i < startDay; i++) {
+      const emptyCell = document.createElement('div');
+      calendarGrid.appendChild(emptyCell);
+    }
+
+    for (let day = 1; day <= daysInMonth; day++) {
+      const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+      const dayCell = document.createElement('div');
+      dayCell.className = 'calendar-day';
+      dayCell.textContent = day;
+
+      // 오늘 날짜 표시
+      const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+      if (dateStr === todayStr) {
+        dayCell.classList.add('today');
+      }
+
+
+      if (enabledDates.includes(dateStr)) {
+        dayCell.addEventListener('click', () => {
+          selectedDate = new Date(year, month, day);
+          selectedDateEl.textContent = dateStr;
+          renderCalendar(year, month, enabledDates, dateStr);
+        });
+      } else {
+        dayCell.style.color = 'lightgray';
+      }
+      if (dateStr === defaultDate) {
+        dayCell.classList.add('selected');
+      }
+      calendarGrid.appendChild(dayCell);
+    }
+
+    calendarElement.appendChild(calendarHeader);
+    calendarElement.appendChild(calendarGrid);
+  }
+
+  function resetSelectionInfo() {
+    selectedCardEl.textContent = "없음";
+    selectedDateEl.textContent = "없음";
+    selectedQuantityEl.textContent = "0";
+    totalQuantity.textContent = '0'; // 수량 초기화
+    totalPrice.textContent = '0 원'; // 총 결제 금액 초기화
+  }
+
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      const index = card.getAttribute('data-index');
+      const selectedCard = cardsData[index];
+      resetSelectionInfo();
+      selectedCardEl.textContent = `${selectedCard.location} - ${selectedCard.date}`;
+      const defaultDate = selectedCard.dates[0];
+      const defaultDateObj = new Date(defaultDate);
+      renderCalendar(defaultDateObj.getFullYear(), defaultDateObj.getMonth(), selectedCard.dates, defaultDate);
+      selectedDateEl.textContent = defaultDate;
+    });
+  });
+
+  renderCalendar(today.getFullYear(), today.getMonth());
+
 const datepickerContainer = document.querySelector('#datepicker-container');
 // 각각의 변수에 각각의 id를 찾아서 저장함.
 cardsContainer.innerHTML = cardsHTML;
@@ -93,12 +214,20 @@ function updatePrice() {
   const quantity = parseInt(totalQuantity.textContent, 10);
   const price = quantity * unitPrice;
   totalPrice.textContent = `${price.toLocaleString()} 원`;
+
+  selectedQuantityEl.textContent = quantity; // 선택한 수량을 업데이트
+
   selectedQuantityEl.textContent = quantity;
+
 }
 
 minusBtn.addEventListener('click', () => {
   let quantity = parseInt(totalQuantity.textContent, 10);
+
+  if (quantity > 0) {
+
   if (quantity > 0) { // 최소 수량은 0으로 설정
+
     quantity -= 1;
     totalQuantity.textContent = quantity;
     updatePrice();
