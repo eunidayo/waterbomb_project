@@ -3,8 +3,7 @@
 /* 로고 : MOVE Sans */
 @font-face {
   font-family: "MoveSans-Bold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2")
-    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -133,76 +132,58 @@ p {
   line-height: 12px;
 }
 .card:nth-child(1) {
-  background: url(/waterbomb_project/image/ticket_selection/seoul1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/seoul1.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(1):hover {
-  background: url(/waterbomb_project/image/ticket_selection/seoul2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/seoul2.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(2) {
-  background: url(/waterbomb_project/image/ticket_selection/jeju1.jpg) no-repeat
-    100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/jeju1.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(2):hover {
-  background: url(/waterbomb_project/image/ticket_selection/jeju2.jpg) no-repeat
-    100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/jeju2.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(3) {
-  background: url(/waterbomb_project/image/ticket_selection/daegu1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/daegu1.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(3):hover {
-  background: url(/waterbomb_project/image/ticket_selection/daegu2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/daegu2.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(4) {
-  background: url(/waterbomb_project/image/ticket_selection/busan1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/busan1.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(4):hover {
-  background: url(/waterbomb_project/image/ticket_selection/busan2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/busan2.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(5) {
-  background: url(/waterbomb_project/image/ticket_selection/incheon1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/incheon1.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(5):hover {
-  background: url(/waterbomb_project/image/ticket_selection/incheon2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/incheon2.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(6) {
-  background: url(/waterbomb_project/image/ticket_selection/daejeon1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/daejeon1.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(6):hover {
-  background: url(/waterbomb_project/image/ticket_selection/daejeon2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/daejeon2.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(7) {
-  background: url(/waterbomb_project/image/ticket_selection/sokcho1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/sokcho1.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(7):hover {
-  background: url(/waterbomb_project/image/ticket_selection/sokcho2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/sokcho2.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(8) {
-  background: url(/waterbomb_project/image/ticket_selection/suwon1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/suwon1.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(8):hover {
-  background: url(/waterbomb_project/image/ticket_selection/suwon2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/suwon2.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(9) {
-  background: url(/waterbomb_project/image/ticket_selection/yeosu1.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/yeosu1.jpg) no-repeat 100% / cover;
 }
 .card:nth-child(9):hover {
-  background: url(/waterbomb_project/image/ticket_selection/yeosu2.jpg)
-    no-repeat 100% / cover;
+  background: url(/waterbomb_project/image/ticket_selection/yeosu2.jpg) no-repeat 100% / cover;
 }
 .calendar-container {
   width: 100%;
@@ -372,7 +353,7 @@ footer .contents {
 }
 footer .contents p {
   text-align: center;
-  font-size: 10px;
+  font-size: 15px;
   line-height: 24px;
   /* 266.667% */
   margin: 0;
@@ -384,7 +365,7 @@ footer .contents .icoGroup {
 }
 footer span {
   text-align: center;
-  font-size: 10px;
+  font-size: 15px;
   line-height: 24px;
 }
 /* footer css 끝 */
