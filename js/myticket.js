@@ -1,25 +1,30 @@
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("availableTickets").style.display = "block";
+  document.querySelector("#availableTickets").style.display = "block";
   var defaultTab = document.querySelector(".tablink");
   if (defaultTab) {
-    defaultTab.className += " active";
+    defaultTab.classList.add("active"); // 기본으로 첫 번째 탭 링크에 "active" 클래스 추가
   }
   initializeSwiper();
   loadTickets();
 });
+
+function openTab(evt, tabName) {
+  var tabcontent = document.querySelectorAll(".tabcontent");
+  tabcontent.forEach(function (tab) {
+    tab.style.display = "none";
+  });
+
+  var tablinks = document.querySelectorAll(".tablink");
+  tablinks.forEach(function (tab) {
+    tab.classList.remove("active"); // 모든 탭 링크에서 "active" 클래스 제거
+  });
+
+  document.querySelector("#" + tabName).style.display = "block";
+  evt.currentTarget.classList.add("active"); // 클릭된 탭 링크에 "active" 클래스 추가
+  // 스와이퍼 초기화
+  initializeSwiper();
+}
+
 function initializeSwiper() {
   new Swiper(".mySwiper", {
     pagination: {
@@ -60,11 +65,11 @@ function loadTickets() {
             <div class="qr-code">
             <img src="/waterbomb_project/image/myticket/qrcode.png" alt="qr">
             </div>
-              <p>예매번호:<br> ${ticket.bookingNumber}</p>
-              <p>장소: ${ticket.location}</p>
-              <p>날짜: ${ticket.date}</p>
-              <p>시간: ${ticket.time}</p>
-              <p>좌석 등급: ${ticket.seatGrade}</p>
+            <p>예매번호:<br> <span>${ticket.bookingNumber}</span></p>
+            <p>장소: <span>${ticket.location}</span></p>
+            <p>날짜: <span>${ticket.date}</span></p>
+            <p>시간: <span>${ticket.time}</span></p>
+            <p>좌석 등급: <span>${ticket.seatGrade}</span></p>
             <button class="confirm-btn"> <i class="fa-solid fa-download"></i>저장</button>
         </div>
       </div>
