@@ -79,28 +79,32 @@ header .logo span {
 .mypageTop .material-symbols-outlined:nth-child(1) {
 font-size: 35px;
 }
+/* .main{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 40% 0 10%;
+  background: #000;
+} */
 .mypageDetails{
     display: flex;
-    width: 100%;
     flex-direction: column;
     color: white;
-    padding: 20px 30px 30px;
+    padding: 20px 15%;
     gap:50px;
     background-color: #000000;
 }
 .mypageTop{
     display: flex;
- justify-content: space-between;
- align-items: center;
+ flex-direction: column;
+ gap: 10px;
 }
 .mypageProfile{
   display: flex;
-  gap: 10px;
-  justify-content: center;
-align-items: center;
+  gap: 15px;
 }
 h2{
-  font-size: 30px;
+  font-size: 25px;
 }
 button {
   display: flex;
@@ -119,6 +123,9 @@ display: flex;
 flex-direction: column;
 gap: 30px;
 cursor: pointer;
+}
+.category span:hover{
+  color: #4dff4d;
 }
 .category a{
   color: white;

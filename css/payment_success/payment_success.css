@@ -158,6 +158,7 @@ main {
 .sec03 .sec03Inner .info .infoList {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
   width: 100%;
 }
@@ -169,6 +170,7 @@ main {
 .sec03 .sec03Inner .info .infoQr {
   display: flex;
   flex-direction: column;
+  align-items: centers;
   gap: 5px;
 }
 .sec03 .sec03Inner .info .infoQr .qr {
@@ -194,6 +196,10 @@ main {
   color: #686868;
   background: #FDFDFD;
 }
+.sec03 .sec03Inner .info .infoQr .save:hover{
+  background: #0AABFF;
+  color: #ffffff;
+}
 .sec03 .sec03Inner .caution {
   display: flex;
   width: 100%;
@@ -212,6 +218,11 @@ main {
   color: #686868;
   transition: 0.2s ease, color 0.2s ease;
 }
+.sec03 .btn_confirm:hover{
+  box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
+  color: #0AABFF;
+}
+
 footer {
   display: flex;
   justify-content: center;
