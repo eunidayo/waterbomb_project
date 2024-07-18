@@ -86,6 +86,13 @@ header .logo span {
   align-items: flex-start;
   gap: 5px;
 }
+.guestInfo > p,
+.confirmOrder > p,
+.guestInfo .info p,
+.totalLabel p,
+.terms > div span {
+  font-weight: 700;
+}
 .guestInfo p {
   margin: 0;
 }
@@ -101,11 +108,11 @@ header .logo span {
   background: #FFF;
 }
 .guestInfo .info p {
-  width: auto;
+  width: 100%;
   margin: 0;
 }
 .guestInfo .info span {
-  width: auto;
+  width: 100%;
   color: #0AABFF;
   font-size: 14px;
 }
@@ -118,9 +125,13 @@ header .logo span {
 .confirmOrder p {
   margin: 0;
 }
+.confirmOrder p span {
+  color: #686868;
+  font-weight: 400;
+}
 .confirmOrder .order {
   display: flex;
-  padding: 12px 15px 16px 12px;
+  padding: 16px 0 16px;
   justify-content: flex-start;
   align-items: center;
   border-radius: 5px;
@@ -139,10 +150,12 @@ header .logo span {
   width: 77px;
   justify-content: center;
   align-items: center;
-
   border-radius: 5px;
   background: rgba(255, 191, 0, 0.7);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.regionSchedule {
+  font-weight: 700;
 }
 .paymentMethod {
   display: flex;
@@ -154,13 +167,14 @@ header .logo span {
 }
 .paymentMethod .payList {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  cursor: pointer;
+  gap: 10px;
 }
 .paymentMethod .payList article {
   display: flex;
   width: 100px;
   height: 100px;
-  padding: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -170,6 +184,7 @@ header .logo span {
 }
 .paymentMethod .payList article p {
   margin: 0;
+  font-weight: 700;
   font-size: 12px;
 }
 .totalAmount {
@@ -189,6 +204,19 @@ header .logo span {
 }
 .totalLabel p {
   margin: 0;
+}
+.terms {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 0 20px 0;
+}
+.terms > div {
+  padding: 0 0 0 15px
+}
+
+.terms > div > div {
+  color: #7d7d7d;
 }
 .btnConfirm {
   display: flex;
