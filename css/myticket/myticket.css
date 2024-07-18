@@ -115,13 +115,6 @@ main {
 .swiper-container {
   position: relative;
 }
-.swiper-button-next, .swiper-button-prev, .swiper-pagination-fraction {
-  color: #4DFF4D;
-}
-.swiper-pagination {
-  position: absolute;
-  top: -18px;
-}
 .swiper {
   width: 100%;
   position: initial;
@@ -137,6 +130,14 @@ main {
   font-size: 18px;
   color: #fff;
 }
+.swiper-button-next, .swiper-button-prev, .swiper-pagination-fraction {
+  color: #4DFF4D;
+}
+.swiper-pagination {
+  position: absolute;
+  top: -18px;
+  height: 10px;
+}
 .swiper-button-next {
   position: absolute;
   top: 45%;
@@ -147,6 +148,8 @@ main {
   top: 45%;
   left: -33px;
 }
+
+
 .ticket-container {
   display: flex;
   justify-content: center;
