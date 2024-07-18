@@ -12,8 +12,6 @@
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/waterbomb_project/css/payment_success/payment_success.css">
-  <link rel="stylesheet" media="all and (max-width: 1199px)"
-    href="/waterbomb_project/css/payment_success/payment_success_T.css">
   <title>payment_success page</title>
 </head>
 
@@ -23,94 +21,102 @@
     <div class="logo"><span>WATERBOMB</span></div>
   </header>
 
-
   <!-- 메인 -->
   <main>
     <section class="sec01 p-3">
+
+      <div class="paymentCompleted">
       <i class="fa-regular fa-circle-check"></i>
-      <div class="notice">
-        <span class="paymentCompleted">
-          <span class="fw-semibold text-black">
+
+          <h2 class="fw-semibold text-black">
             티켓 결제 완료
-          </span>
-          <span class="description">"예약 확인을 위해 발급된<span class="reservationNo">예매번호</span> 와<span
-              class="code">QR코드</span>를 저장하세요."</span></span>
+          </h2>
+
+          <p class="description">"예약 확인을 위해 발급된<span> 예매번호</span>와 <span>QR코드</span>를 저장하세요."</p>
+</div>
 
 
-        <span> &#8226; 회원인 경우, <span class="myTickets">My Tickets</span>에서 예매내역을 확인하세요.</span>
+ <div class="notice">
+        <p> &#8226; 회원인 경우, <span>My Tickets</span>에서 예매내역을 확인하세요.</p>
 
 
-        <span> &#8226; 비회원인 경우, <span class="reservationNo">예매번호</span> 또는 결제시 사용한 <span class="phoneNo">핸드폰 번호</span>를
-          입력하여 예매 내역을 확인하세요.</span>
+        <p> &#8226; 비회원인 경우, <span>예매번호</span> 또는 결제시 사용한 <span>핸드폰 번호</span>를
+          입력하여 예매 내역을 확인하세요.</p>
 
         <span class="fw-semibold text-black">
           예매번호 0282-0626-3039-955
         </span>
       </div>
     </section>
-    <section class="sec02"><img src="/waterbomb_project/image/payment_success/payment_success.jpg" class="img-fluid"
-        alt="waterbomb_img">
+
+    <section class="sec02">
+      <!-- <img src="/waterbomb_project/image/payment_success/payment_success.jpg" class="img-fluid" alt="waterbomb_img"> -->
+            <!-- <img src="/waterbomb_project/image/payment_success/payment_success.jpg"alt="waterbomb_img"> -->
     </section>
     <section class="sec03">
       <div class="sec03Inner">
         <div class="info">
           <div class="infoList">
             <div class="price">
-              <span>결제금액</span>
-              <div>220,000원</div>
+              <p>결제금액</p>
+              <span class="fw-bold">220,000원</span>
             </div>
             <div class="pay_date">
-              <span>결제일자</span>
-              <div>2024.6.30</div>
+              <p>결제일자</p>
+              <span class="fw-bold">2024.6.30</span>
             </div>
             <div class="pay">
-              <span>결제수단</span>
-              <div>카카오페이(3177)</div>
+              <p>결제수단</p>
+              <span class="fw-bold">카카오페이(3177)</span>
             </div>
             <div class="location">
-              <span>지역</span>
-              <div>SEOUL</div>
+              <p>지역</p>
+              <span class="fw-bold">SEOUL</span>
             </div>
             <div class="seat">
-              <span>좌석</span>
-              <div>VIP_BLUE</div>
+              <p>좌석</p>
+              <span class="fw-bold">VIP_BLUE</span>
             </div>
             <div class="date_time">
-              <span>날짜, 시간</span>
-              <div>2024.7.5(SUN)</div>
+              <p>날짜, 시간</p>
+              <span class="fw-bold">2024.7.5(SUN)</span>
             </div>
           </div>
           <div class="infoQr">
-            <div class="qr"><i class="fa-solid fa-qrcode"></i></div>
-            <div class="save">
+            <!-- <div class="qr"><i class="fa-solid fa-qrcode"></i></div> -->
+            <div class="qr"><img src="/waterbomb_project/image/payment_success/qrcode.png" class="img-fluid" alt="qrcode"></div>
+            <button class="save">
               <i class="fa-solid fa-download"></i>
-              <span>저장</span>
-            </div>
+              저장
+            </button>
           </div>
         </div>
-        <div class="caution p-3">
+        <div class="caution p-2">
           <span class="text-danger">#주의사항</span>
-          <span class="explanationPrecautions">
-            1)본 티켓은 별도로 배송되지 않는 E-TICKET(QR코드)입니다.
+
+          <span>
+            1&#41; 본 티켓은 별도로 배송되지 않는 E-TICKET(QR코드)입니다.
           </span>
           <span>
-            2)입장 QR코드는 예매자 정보를 기반으로 발송되며 방문자 정보와는 무관합니다.
+            2&rpar; 입장 QR코드는 예매자 정보를 기반으로 발송되며 방문자 정보와는 무관합니다.
           </span>
           <span>
-            3)본 QR코드로 별도의 예매내역 확인 없이 입장이 가능합니다.
+            3&rpar; 본 QR코드로 별도의 예매내역 확인 없이 입장이 가능합니다.
           </span>
           <span>
-            4)예매 내역 확인만으로는 입장에 제한이 있으며, 발급된 QR코드를 필히 준비해야합니다.
+            4&rpar; 예매 내역 확인만으로는 입장에 제한이 있으며, 발급된 QR코드를 필히 준비해야합니다.
           </span>
           <span>
-            5)본 페스티벌은 별도의 종이 티켓을 발권하지 않습니다.
+            5&rpar; 본 페스티벌은 별도의 종이 티켓을 발권하지 않습니다.
           </span>
         </div>
       </div>
+
+      <a href="/waterbomb_project/html/myticket.html"><button type="button" class="btn_confirm bg-white bg-body-tertiary rounded"> 확인 </button>
+    </a>
     </section>
   </main>
   <footer>
-
     <div class="contents">
       <p>Terms of Use</p>
       <p>Privacy Policy</p>
@@ -122,34 +128,12 @@
       </div>
       <span>© 2024 Festivl. All rights reserved.</span>
     </div>
-    <!-- <div style="overflow:hidden;">
-      <div class="form-group">
-        <div class="row">
-          <div class="col-md-8">
-            <div id="datetimepicker12">
-              dsv
-            </div>
-          </div>
-        </div>
-      </div>
-      <script type="text/javascript">
-        $(function () {
-          $('#datetimepicker12').datetimepicker({
-            inline: true,
-            sideBySide: true
-          });
-        });
-      </script>
-    </div> -->
-
-
   </footer>
 
   <!-- 부트스트랩 CDN 방식으로 임포트 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="/waterbomb_project/js/main.js"></script>
   <script src="/waterbomb_project/js/payment_success.js"></script>
 </body>
 

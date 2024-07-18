@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+  min-width: 320px;
+}
+.sec02 .contents .info .location h2,
+.sec02 .contents .info .date h2 {
+  font-size: 24px;
+}
+.sec02 .contents .title h1 {
+  font-size: 24px;
+}
+.sec02 .inner {
+  gap: 30px;
+}
