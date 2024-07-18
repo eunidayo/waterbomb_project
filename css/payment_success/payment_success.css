@@ -4,16 +4,15 @@
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
 /* 로고 : MOVE Sans */
 @font-face {
   font-family: "MoveSans-Bold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2")
-    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -76,7 +75,8 @@ header .logo span {
   font-family: "MoveSans-Bold";
   font-size: 20px;
   font-weight: 500;
-  line-height: 7px; /* 53.846% */
+  line-height: 7px;
+  /* 53.846% */
 }
 /* 메인 css 시작 */
 main {
@@ -94,18 +94,18 @@ main {
   gap: 10px;
   padding: 10px;
 }
-.sec01 .paymentCompleted{
+.sec01 .paymentCompleted {
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
   justify-content: center;
 }
-.sec01 .paymentCompleted  .fa-circle-check {
+.sec01 .paymentCompleted .fa-circle-check {
   font-size: 45px;
   color: #4DFF4D
 }
-.sec01 .notice{
+.sec01 .notice {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -114,21 +114,20 @@ main {
 .sec03 .infoList span {
   font-size: 20px;
 }
-.sec01 span{
+.sec01 span {
   color: #0AABFF;
 }
 .sec01 p,
 .sec03 p,
-.sec03 .sec03Inner .caution{
-  color:#686868;
+.sec03 .sec03Inner .caution {
+  color: #686868;
   font-size: 16px;
 }
 /* sec02 */
 .sec02 {
   width: 100%;
   height: 180px;
-  background: url(/waterbomb_project/image/payment_success/payment_success.jpg) lightgray 0px 0px /
-    100% 100% no-repeat;
+  background: url(/waterbomb_project/image/payment_success/payment_success.jpg) lightgray 0px 0px / 100% 100% no-repeat;
 }
 .sec03 {
   display: flex;
@@ -142,10 +141,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 80%;
   /* height: auto; */
   gap: 10px;
-  padding: 10px 20px;
+  padding: 10px;
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -158,9 +157,10 @@ main {
 .sec03 .sec03Inner .info .infoList {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   width: 100%;
+  border-right: 1px dashed #0AABFF;
 }
 .sec03 .sec03Inner .info .infoList div {
   display: flex;
@@ -170,33 +170,32 @@ main {
 .sec03 .sec03Inner .info .infoQr {
   display: flex;
   flex-direction: column;
-  align-items: centers;
-  gap: 5px;
+  align-items: center;
+  width: 100%;
 }
 .sec03 .sec03Inner .info .infoQr .qr {
+  background: url(/waterbomb_project/image/payment_success/qrcode.png) no-repeat 50% 0% /contain;
   display: flex;
   border-radius: 5px;
   border: 3px solid #4DFF4D;
   justify-content: center;
-  align-items: center;
-}
-.sec03 .sec03Inner .info .infoQr .qr img{
-  width: 100%;
+  width: 200px;
+  height: 200px;
 }
 .sec03 .sec03Inner .info .infoQr .save {
   display: flex;
-  width: 145px;
-  height: 40px;
+  width: 200px;
+  height: 60px;
   border-radius: 5px;
   border: 1px solid #E4E4E6;
   justify-content: center;
   align-items: center;
   transition: 0.3s ease, color 0.3s ease;
   font-size: 20px;
-  color: #686868;
+  color: #000;
   background: #FDFDFD;
 }
-.sec03 .sec03Inner .info .infoQr .save:hover{
+.sec03 .sec03Inner .info .infoQr .save:hover {
   background: #0AABFF;
   color: #ffffff;
 }
@@ -205,7 +204,7 @@ main {
   width: 100%;
   flex-direction: column;
   gap: 5px;
-  border-top: 1px dashed #686868;
+  border-top: 1px dashed #0AABFF;
 }
 .sec03 .btn_confirm {
   display: flex;
@@ -218,7 +217,7 @@ main {
   color: #686868;
   transition: 0.2s ease, color 0.2s ease;
 }
-.sec03 .btn_confirm:hover{
+.sec03 .btn_confirm:hover {
   box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
   color: #0AABFF;
 }

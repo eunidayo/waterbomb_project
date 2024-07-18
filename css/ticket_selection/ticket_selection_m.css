@@ -1,0 +1,14 @@
+.sec03 .sec03Inner {
+  width: 95%;
+}
+.sec03 .sec03Inner .info .infoQr {
+  padding: 0 0 0 10px;
+}
+.sec03 .sec03Inner .info .infoQr .qr {
+  width: 120px;
+  height: 120px;
+}
+.sec03 .sec03Inner .info .infoQr .save {
+  width: 120px;
+  height: 40px;
+}
