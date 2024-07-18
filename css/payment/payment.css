@@ -90,7 +90,8 @@ header .logo span {
 .confirmOrder > p,
 .guestInfo .info p,
 .totalLabel p,
-.terms > div span {
+.terms > div span,
+.paymentMethod p {
   font-weight: 700;
 }
 .guestInfo p {
@@ -186,6 +187,13 @@ header .logo span {
   margin: 0;
   font-weight: 700;
   font-size: 12px;
+}
+.paymentMethod .payList article:hover {
+  border-color: #4DFF4D;
+}
+
+.paymentMethod .payList article.selected {
+  border-color: #4DFF4D;
 }
 .totalAmount {
   display: flex;

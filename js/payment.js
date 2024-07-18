@@ -10,3 +10,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const articles = document.querySelectorAll('.payList article');
+
+  articles.forEach(article => {
+    article.addEventListener('mouseover', function () {
+    });
+
+    article.addEventListener('mouseout', function () {
+      if (!this.classList.contains('selected')) {
+      }
+    });
+
+    article.addEventListener('click', function () {
+      articles.forEach(a => {
+        a.classList.remove('selected');
+      });
+      this.classList.add('selected');
+    });
+  });
+});
