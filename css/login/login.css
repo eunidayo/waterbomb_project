@@ -127,14 +127,6 @@ html {
   color: #fff;
   font-size: 16px;
 }
-.accountLinks p:nth-child(2) {
-  border-left: 2px solid white;
-  padding-left: 10px;
-}
-.accountLinks p:nth-child(3) {
-  border-left: 2px solid white;
-  padding-left: 10px;
-}
 .accountLinks p:hover {
   text-decoration: underline;
 }
