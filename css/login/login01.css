@@ -161,6 +161,9 @@ html {
   display: flex;
   gap: 10px;
 }
+.guestBtnGroup a {
+  text-decoration: none;
+}
 .guestPurchaseBtn {
   display: flex;
   justify-content: center;
