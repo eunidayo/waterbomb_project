@@ -113,6 +113,9 @@ html {
   cursor: pointer;
   font-size: 16px;
 }
+.formButton:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4) inset;
+}
 .accountLinks {
   display: flex;
   justify-content: space-between;
@@ -151,12 +154,14 @@ html {
   height: 40px;
   cursor: pointer;
 }
+.socialGroup img:hover {
+  filter: brightness(70%);
+}
 .guestBtnGroup {
   display: flex;
   gap: 10px;
 }
-.guestPurchaseBtn1,
-.guestPurchaseBtn2 {
+.guestPurchaseBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,4 +173,7 @@ html {
   color: #000;
   font-size: 16px;
   line-height: 23px; /* 164.286% */
+}
+.guestPurchaseBtn:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
