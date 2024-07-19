@@ -23,6 +23,7 @@
   /* outline: 1px solid navy; */
 }
 /* 부트스트랩때문에 생기는 자동 마진 초기화 시키기 */
+
 p,
 h1,
 h2,
@@ -51,88 +52,165 @@ header {
   color: white;
   height: 50px;
   width: 100%;
+
 }
-header .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 35px;
-  padding: 0 10px;
-  border-radius: 5px;
-  border: 2px solid #ffbf00;
+header .logo{
+position: relative;
 }
 header .logo span {
   color: #ffbf00;
   font-family: "MoveSans-Bold";
   font-size: 20px;
   font-weight: 500;
-  line-height: 7px; /* 53.846% */
+
+}
+header .logo .fa-house-chimney{
+  color: #ffbf00;
+  position: absolute;
+  left: 173px;
+  font-size: 25px;
+}
+header .logo .fa-house-chimney:hover{
+  color: #fff;
 }
 /* 메인 css 시작 */
-/* main {
+main {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
-} */
-.mypageTop .material-symbols-outlined:nth-child(1) {
-font-size: 35px;
 }
-/* .main{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 0 40% 0 10%;
-  background: #000;
-} */
+
+
 .mypageDetails{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding: 20px 15%;
-    gap:50px;
-    background-color: #000000;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+  padding: 20px 0 50px;
+  background: #f4f3f8;
 }
 .mypageTop{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.profilePicture {
+  display: flex;
+  width: 75px;
+  justify-content: center;
+  background: #fff;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.mypageTop .fa-jenkins{
+  width: 50px;
+  height: 55px;
+  font-size: 50px;
+}
+.mypageDetails .mypageTop .myInfo{
+  width: 75px; 
+    height: 25px;
+    font-size: 10px;
     display: flex;
- flex-direction: column;
- gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
 }
-.mypageProfile{
+
+.imprtDtls{
   display: flex;
-  gap: 15px;
+  flex-direction: row;
+  position: relative;
+
 }
-h2{
-  font-size: 25px;
-}
-button {
+
+.imprtDtls button{
   display: flex;
-  width: 60px;
-  height: 20px;
+  width: 100px;
+  height: 55px;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
-  border: none;
-  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
-  color: #686868;
-  transition: 0.2s ease, color 0.2s ease;
+  background: #ffbf00;
+  color: #fff;
 }
+.imprtDtls button:hover{
+  box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.imprtDtls button:first-child{
+border-radius: 10px 0 0 10px ;}
+
+.imprtDtls button:last-child{
+  border-radius: 0 10px 10px 0 ;}
+
+
+  .imprtDtls button:first-child::after {
+    content: "";
+    width: 1px;
+    height: 25px;
+    position: absolute;
+    left: 100px;
+    display: block;
+    background-color: white;
+}
+  
+.imprtDtls button:last-child::before {
+  content: "";
+  width: 1px;
+  height: 25px;
+  position: absolute;
+ right:100px;
+  display: block;
+  background-color: white;
+}
+
+
+
+
 .category{
-display: flex;
-flex-direction: column;
-gap: 30px;
-cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  
 }
-.category span:hover{
-  color: #4dff4d;
+.category button:first-child{
+border-radius: 20px 20px 0 0;
+border-bottom: solid #e1e1e1
 }
+.category button:last-child{
+  border-radius: 0 0 20px 20px;
+  border-top: solid #e1e1e1
+}
+
+.category button{
+height: 45px;
+align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.mypageTop .myInfo:hover,
+.category button:hover{
+  box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
 .category a{
   color: white;
 }
 a{
   text-decoration: none;
 }
+button{
+border: none;
+background: #fff;
+}
+
+
 footer {
     display: flex;
     justify-content: center;
@@ -161,4 +239,17 @@ footer {
     text-align: center;
     font-size: 7px;
     line-height: 24px;
+  }
+
+
+
+
+  .accountLinks p:nth-child(3)::before {
+    content: "";
+    width: 2px;
+    height: 20px;
+    position: absolute;
+    left: 193px;
+    display: block;
+    background-color: white;
   }
