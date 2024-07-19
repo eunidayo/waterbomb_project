@@ -173,22 +173,13 @@ header .logo span {
   bottom: 90px;
   z-index: 9;
 }
-#myticket-btn {
+.myticketBtn {
   position: fixed;
-  right: 20px;
+  right: 23px;
   bottom: 140px;
   z-index: 9;
-  width: auto;
-  height: auto;
-  padding: 5px;
-  border-color: transparent;
-  border-radius: 20px;
-  background-color: #f9dd68;
-  font-weight: 800;
-
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
-    0 8px 16px rgba(0, 0, 0, 0.11);
+  width: 70px;
+  height: 88px;
 }
 /* sec03 css 시작 */
 .sec03 {
