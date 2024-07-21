@@ -49,18 +49,19 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  width: 100px;
+  width: auto;
   height: 35px;
+  padding: 0 10px;
   border-radius: 5px;
   border: 2px solid #ffbf00;
 }
 header .logo span {
   color: #ffbf00;
-  font-family: MoveSans;
-  font-size: 13px;
+  font-family: "MoveSans-Bold";
+  font-size: 20px;
   font-weight: 500;
   line-height: 7px;
+  /* 53.846% */
 }
 /* 헤더 css 끝 */
 /* main css 시작 */

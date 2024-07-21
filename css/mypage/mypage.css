@@ -6,8 +6,7 @@
 /* 로고 : MOVE Sans */
 @font-face {
   font-family: "MoveSans-Bold";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2")
-    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -41,6 +40,7 @@ body {
   flex-direction: column;
   /* 320px 이하로 줄어들었을때 레이아웃 유지시키기 */
   min-width: 320px;
+  height: 100%;
 }
 /* 헤더 css 시작 */
 header {
@@ -54,8 +54,8 @@ header {
   width: 100%;
 
 }
-header .logo{
-position: relative;
+header .logo {
+  position: relative;
 }
 header .logo span {
   color: #ffbf00;
@@ -64,13 +64,13 @@ header .logo span {
   font-weight: 500;
 
 }
-header .logo .fa-house-chimney{
+header .logo .fa-house-chimney {
   color: #ffbf00;
   position: absolute;
   left: 173px;
   font-size: 25px;
 }
-header .logo .fa-house-chimney:hover{
+header .logo .fa-house-chimney:hover {
   color: #fff;
 }
 /* 메인 css 시작 */
@@ -82,7 +82,7 @@ main {
 }
 
 
-.mypageDetails{
+.mypageDetails {
   flex-direction: column;
   display: flex;
   width: 100%;
@@ -91,7 +91,7 @@ main {
   padding: 20px 0 50px;
   background: #f4f3f8;
 }
-.mypageTop{
+.mypageTop {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -107,29 +107,29 @@ main {
   border-radius: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.mypageTop .fa-jenkins{
+.mypageTop .fa-jenkins {
   width: 50px;
   height: 55px;
   font-size: 50px;
 }
-.mypageDetails .mypageTop .myInfo{
-  width: 75px; 
-    height: 25px;
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
+.mypageDetails .mypageTop .myInfo {
+  width: 75px;
+  height: 25px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
 }
 
-.imprtDtls{
+.imprtDtls {
   display: flex;
   flex-direction: row;
   position: relative;
-
+  border-radius: 10px;
 }
 
-.imprtDtls button{
+.imprtDtls button {
   display: flex;
   width: 100px;
   height: 55px;
@@ -138,32 +138,34 @@ main {
   background: #ffbf00;
   color: #fff;
 }
-.imprtDtls button:hover{
+.imprtDtls button:hover {
   box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
-.imprtDtls button:first-child{
-border-radius: 10px 0 0 10px ;}
-
-.imprtDtls button:last-child{
-  border-radius: 0 10px 10px 0 ;}
-
-
-  .imprtDtls button:first-child::after {
-    content: "";
-    width: 1px;
-    height: 25px;
-    position: absolute;
-    left: 100px;
-    display: block;
-    background-color: white;
+.imprtDtls button:first-child {
+  border-radius: 10px 0 0 10px;
 }
-  
+
+.imprtDtls button:last-child {
+  border-radius: 10px;
+}
+
+
+.imprtDtls button:first-child::after {
+  content: "";
+  width: 1px;
+  height: 25px;
+  position: absolute;
+  left: 100px;
+  display: block;
+  background-color: white;
+}
+
 .imprtDtls button:last-child::before {
   content: "";
   width: 1px;
   height: 25px;
   position: absolute;
- right:100px;
+  right: 100px;
   display: block;
   background-color: white;
 }
@@ -171,85 +173,85 @@ border-radius: 10px 0 0 10px ;}
 
 
 
-.category{
+.category {
   display: flex;
   flex-direction: column;
   width: 290px;
-  
+
 }
-.category button:first-child{
-border-radius: 20px 20px 0 0;
-border-bottom: solid #e1e1e1
+.category button:first-child {
+  border-radius: 20px 20px 0 0;
+  border-bottom: solid #e1e1e1
 }
-.category button:last-child{
+.category button:last-child {
   border-radius: 0 0 20px 20px;
   border-top: solid #e1e1e1
 }
 
-.category button{
-height: 45px;
-align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
+.category button {
+  height: 45px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 .mypageTop .myInfo:hover,
-.category button:hover{
+.category button:hover {
   box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 
-.category a{
+.category a {
   color: white;
 }
-a{
+a {
   text-decoration: none;
 }
-button{
-border: none;
-background: #fff;
+button {
+  border: none;
+  background: #fff;
 }
 
 
 footer {
-    display: flex;
-    justify-content: center;
-    background-color: #000;
-  }
-  footer .contents {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
-    color: #fff;
-  }
-  footer .contents p {
-    text-align: center;
-    font-size: 15px;
-    line-height: 24px;
-    margin: 0;
-  }
-  footer .contents .icoGroup {
-    display: flex;
-    gap: 20px;
-    padding: 10px 0;
-  }
-  footer span {
-    text-align: center;
-    font-size: 7px;
-    line-height: 24px;
-  }
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+}
+footer .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  color: #fff;
+}
+footer .contents p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+}
+footer .contents .icoGroup {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+}
+footer span {
+  text-align: center;
+  font-size: 7px;
+  line-height: 24px;
+}
 
 
 
 
-  .accountLinks p:nth-child(3)::before {
-    content: "";
-    width: 2px;
-    height: 20px;
-    position: absolute;
-    left: 193px;
-    display: block;
-    background-color: white;
-  }
+.accountLinks p:nth-child(3)::before {
+  content: "";
+  width: 2px;
+  height: 20px;
+  position: absolute;
+  left: 193px;
+  display: block;
+  background-color: white;
+}
