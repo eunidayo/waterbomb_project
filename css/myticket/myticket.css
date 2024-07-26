@@ -60,26 +60,28 @@ main {
   background-color: #000;
   width: 100%;
   height: auto;
+  padding: 20px;
+  background: url(/waterbomb_project/image/myticket/myticket_background.png) 0px 0px / 100% 100% no-repeat;
 }
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #000;
-  color: #fff;
-  gap: 50px;
-  padding-bottom: 50px;
+  /* color: #fff; */
+  /* gap: 50px; */
+  background: #fff;
+  opacity: 45%;
 }
 .tabs {
   display: flex;
   justify-content: space-around;
-  background-color: #000;
+  /* background-color: #000; */
 }
 .tabs .tablink {
   font-size: 14px;
 }
 .tablink {
-  background-color: #000;
+  /* background-color: #000; */
   color: #fff;
   border: none;
   width: 50%;
@@ -88,8 +90,8 @@ main {
   font-size: 12px;
 }
 .tablink.active {
-  color: #4DFF4D;
-  border-bottom: 2px solid #4DFF4D;
+  color: #705AFF;
+  border-bottom: 2px solid #705AFF;
 }
 .tabcontent {
   display: flex;

@@ -14,45 +14,47 @@
 </head>
 
 <body>
+
   <div class="loginBox">
-    <div class="header">
-      <a href="/waterbomb_project/html/main.html"><i class="fa-solid fa-arrow-left"></i></a>
-    </div>
-    <a href="/waterbomb_project/html/main.html">
-      <div class="logo"><span>WATERBOMB</span></div>
-    </a>
-    <div class="loginContainer">
-      <form action="/login" method="POST">
-        <div class="idGroup">
-          <input type="text" id="id" name="id" class="loginInput" placeholder="아이디">
-        </div>
-        <div class="passwordGroup">
-          <input type="password" id="password" name="password" class="passwordInput" placeholder="비밀번호">
-          <i class="fa-solid fa-eye" id="togglePassword"></i>
-        </div>
-        <button type="submit" class="formButton">
-          <a href="/waterbomb_project/html/payment.html">
-            로그인
-          </a>
-        </button>
+    <div class="inner">
+      <div class="arrowBack">
+        <a href="/waterbomb_project/html/main.html"><span class="material-symbols-outlined">
+            arrow_back_ios
+          </span></a>
+      </div>
+
+
+      <a href="/waterbomb_project/html/main.html">
+        <div class="logo"><span>WATERBOMB</span></div>
+      </a>
+
+
+
+      <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        <a href="/waterbomb_project/html/ticket_selection.html"><button type="submit">Sign In</button></a>
       </form>
-      <div class="accountLinks">
-        <p>아이디 찾기</p>
-        <p>비밀번호 찾기</p>
-        <p>회원가입</p>
+
+      <span>Or Continue With</span>
+
+      <div class="social-login">
+        <button>Google</button>
+        <button>GitHub</button>
+        <button>Facebook</button>
       </div>
-      <div class="socialGroup">
-        <div class="iconGroup">
-          <img src="/waterbomb_project/image/iogin/kakao.png" alt="카카오 로고">
-          <img src="/waterbomb_project/image/iogin/facebook.png" alt="페이스북 로고">
-          <img src="/waterbomb_project/image/iogin/naver.png" alt="네이버 로고">
-        </div>
-        <div class="guestBtnGroup">
-          <a href="/waterbomb_project/html/payment_guest.html"><button class="guestPurchaseBtn">비회원 구매하기</button></a>
-        </div>
+
+      <div class="register">
+        <a href="#"><button>비회원 구매</button> </a><a href="#"><button>비회원 조회</button></a>
       </div>
+
+
+
     </div>
+
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
