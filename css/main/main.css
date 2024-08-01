@@ -32,7 +32,7 @@ li {
   padding: 0;
   margin: 0;
 }
-a {}
+
 body {
   /* 320px 이하로 줄어들었을때 레이아웃 유지시키기 */
   display: flex;
@@ -45,11 +45,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 30px 65px;
   background-color: #000000;
   color: white;
   height: 50px;
   width: 100%;
+
 }
 header .logo {
   display: flex;
@@ -57,17 +58,17 @@ header .logo {
   align-items: center;
   width: auto;
   height: 35px;
-  padding: 0 10px;
+  padding: 20px;
   border-radius: 5px;
-  border: 2px solid #ffbf00;
+  border: 3px solid #ffbf00;
 }
 header .logo span {
   color: #ffbf00;
   font-family: "MoveSans-Bold";
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 7px;
-  /* 53.846% */
+  /* 29.167% */
 }
 .sec01 {
   position: relative;
@@ -91,18 +92,50 @@ header .logo span {
 }
 /* sec02 css 시작 */
 .sec02 {
+  display: flex;
   width: 100%;
-  height: 100%;
-  background: url(/waterbomb_project/image/main/sec02_bg.png) lightgray 0px 0px / 100% 100% no-repeat;
+  padding: 20px;
+  flex-direction: column;
+  gap: 10px;
+  border: 3px solid #FFBF00;
+  background: #0047B1;
+  /* background: url(/waterbomb_project/image/main/sec02_bg.png) lightgray 0px 0px / 100% 100% no-repeat; */
 }
 .sec02 .inner {
   display: flex;
-  padding: 30px 0px;
   flex-direction: column;
   align-items: center;
-  gap: 70px;
-  flex: 1 0 0;
-  position: relative;
+  gap: 15px;
+  border: 3px solid #FFBF00;
+  background: #FFF;
+  padding-bottom: 15px;
+}
+.sec02 .inner img {
+  width: 100%;
+  height: 300px;
+}
+.sec02 .inner h1 {
+  color: #0047B1;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 21px;
+}
+.event-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.event-details::before {
+  content: "";
+  margin: -5px;
+  width: 1px;
+  height: 25px;
+  position: absolute;
+  /* left: 100px; */
+  display: flex;
+  background-color: white;
 }
 .sec02 .inner .buyTicket {
   font-size: 20px;
@@ -116,61 +149,52 @@ header .logo span {
   position: sticky;
   top: 4px;
 }
-.sec02 .contents {
+
+
+.card-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
+  flex-wrap: wrap;
+  gap: 10px;
   width: 100%;
 }
-.sec02 .contents .title {
+.card {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 55px;
+  padding: 0px 10px;
+  flex-direction: row;
+  /* justify-content: center; */
   align-items: center;
-  gap: 15px;
-  height: 56px;
-  color: #fff;
-}
-.sec02 .contents .title h1 {
-  color: #fff;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 800;
-  line-height: 21px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.sec02 .contents .info {
-  display: flex;
-  gap: 50px;
-}
-.sec02 .location {
-  display: flex;
-  flex-direction: column;
   gap: 10px;
+  border-radius: 20px;
+  border: 3px solid #FFBF00;
+  background: #0047B1;
 }
-.sec02 .location h2 {
-  color: #ffbf00;
+.card h2 {
+  color: #FFF;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 800;
-  line-height: 21px;
-  /* 95.455% */
-  padding-bottom: 10px;
-}
-.sec02 .date {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.sec02 .date h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 700;
   line-height: 21px;
   /* 105% */
-  padding-bottom: 10px;
 }
+.card p:nth-child(1) {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  ;
+  font-weight: 800;
+  line-height: 21px;
+}
+.card p:nth-child(2) {
+  color: #FFBF00;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 21px;
+  /* 161.538% */
+}
+
 .fa-circle-arrow-up {
   color: white;
   position: fixed;
@@ -186,53 +210,47 @@ header .logo span {
   width: 70px;
   height: 88px;
 }
+
+
 /* sec03 css 시작 */
 .sec03 {
   width: 100%;
-  height: 350px;
-  padding-top: 16px;
-  background: url(/waterbomb_project/image/main/sec03_bg.png) lightgray 0px 0px / 100% 100% no-repeat;
+  /* height: 528px; */
+
 }
 .sec03 .contents {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  align-self: stretch;
+  /* align-items: center; */
+  position: relative;
 }
 .sec03 .title {
+  width: 50%;
   display: flex;
-  height: 56px;
+  position: absolute;
+  left: 150px;
+  top: 40px;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  align-self: stretch;
+  gap: 10px;
+  z-index: 2;
+  color: #FFF;
 }
-.sec03 .title h2 {
-  color: #fff;
+.sec03 .title h2,
+.sec03 .title h3 {
+  width: 100%;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 30px;
   font-weight: 800;
   line-height: 21px;
 }
 .sec03 .title h3 {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 21px;
-  /* 105% */
+  font-size: 24px;
+}
 
-  /* 폰트에 그라데이션효과 입히기 */
-  background-image: linear-gradient(to right, #c0c0c0, #ededed);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.carousel {
-  width: 320px;
-  height: auto;
-}
+
+
 footer {
   display: flex;
   justify-content: center;
@@ -265,7 +283,7 @@ footer span {
 /* swiper css 시작 */
 .swiper {
   width: 100%;
-  height: 257px;
+  height: 528px;
 }
 .swiper-slide {
   display: flex;
@@ -310,3 +328,69 @@ footer span {
   transform: rotate(-90deg);
 }
 /* swiper css 끝 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .sec02 .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+.sec02 .contents .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  height: 56px;
+  color: #fff;
+}
+.sec02 .contents .title h1 {
+  color: #0047B1;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 21px;
+}
+.sec02 .contents .info {
+  display: flex;
+  gap: 50px;
+}
+.sec02 .location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sec02 .location h2 {
+  color: #ffbf00;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 21px;
+  padding-bottom: 10px;
+}
+.sec02 .date {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sec02 .date h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 21px;
+  padding-bottom: 10px;
+} */

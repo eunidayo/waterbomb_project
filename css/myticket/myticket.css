@@ -61,7 +61,7 @@ main {
   width: 100%;
   height: auto;
   padding: 20px;
-  background: url(/waterbomb_project/image/myticket/myticket_background.png) 0px 0px / 100% 100% no-repeat;
+  background: url(/waterbomb_project/image/myticket/myticket_background02.png) 0px 0px / 100% 100% no-repeat;
 }
 .container {
   display: flex;
@@ -70,7 +70,8 @@ main {
   /* color: #fff; */
   /* gap: 50px; */
   background: #fff;
-  opacity: 45%;
+  /* opacity: 45%; */
+  border-radius: 20px;
 }
 .tabs {
   display: flex;
@@ -163,7 +164,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(/waterbomb_project/image/myticket/ticket.png) no-repeat 50% 0% / contain;
+  /* background: url(/waterbomb_project/image/myticket/ticket.png) no-repeat 50% 0% / contain; */
   color: #000;
   border-radius: 10px;
   padding: 30px 20px;
