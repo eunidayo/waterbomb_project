@@ -15,70 +15,87 @@
 </head>
 
 <body>
-  <header>
-    <a href="/waterbomb_project/html/main.html">
-      <div class="logo"><span>WATERBOMB</span></div>
-    </a>
-  </header>
   <main>
     <div class="paymentContents">
-      <h2>예매/결제</h2>
-      <div class="confirmOrder">
-        <p>주문상품 <span>(아래 내용이 맞는지 확인해 주세요.)</span></p>
-        <div class="order">
-          <div class="orderContents">
-            <img src="/waterbomb_project/image/payment/region.png" alt="서울 지역이미지" class="region">
-            <div class="regionSchedule">
-              <p>워터밤 SEOUL 2024</p>
-              <p>일정 7.7 (SUN) - 오후 1 : 00</p>
-              <p>TICKETS(VIP_BLUE) 2 </p>
-            </div>
-          </div>
-        </div>
+
+      <div class="top_title">
+        <a href="/waterbomb_project/html/main.html"><span class="material-symbols-outlined">
+            arrow_back_ios
+          </span></a>
+        <h2 class="fw-bold">예매/결제</h2>
       </div>
+
+
+      <div class="confirmOrder">
+
+        <p class="fw-bold">주문상품 <span>(결제 전 아래 내용을 확인해 주세요.)</span></p>
+
+
+        <div class="regionSchedule">
+          <img src="/waterbomb_project/image/payment/region01.png" alt="지역 카드 이미지">
+          <p class="fw-bold">[ WATERBOMB SEOUL 2024 ]</p>
+          <p>7.7 (SUN) - 13:00</p>
+          <p>TICKETS(VIP_BLUE) <span class="num fw-bold">2</span></p>
+
+        </div>
+
+      </div>
+
+
       <div class="paymentMethod">
-        <p>결제수단</p>
+
+        <p class="fw-bold">결제수단</p>
+
         <div class="payList">
           <article class="creditCard">
             <img src="/waterbomb_project/image/payment/carditcard.png" alt="카드 이미지">
             <p>신용카드</p>
           </article>
+
           <article class="naverPay">
             <img src="/waterbomb_project/image/payment/naverpay.png" alt="네이버페이 이미지">
             <p>네이버페이</p>
           </article>
+
           <article class="kakaoPay">
             <img src="/waterbomb_project/image/payment/kakaopay.png" alt="카카오페이 이미지">
             <p>카카오페이</p>
           </article>
+
           <article class="bankTransfer">
             <img src="/waterbomb_project/image/payment/banktransfer.png" alt="무통장입금 이미지">
             <p>무통장입금</p>
+
           </article>
+
         </div>
+
       </div>
+
+
+
       <div class="totalAmount">
         <div class="totalLabel">
-          <p>총 결제금액</p>
-          <p>220,000원</p>
+          <p class="fw-bold">총 결제금액</p>
+          <p class="fw-bold">220,000원</p>
         </div>
       </div>
+
+
       <div class="terms">
         <div>
-          <p><input type="checkbox"> 워터밤 2024는 만 19세 이상만 참여 가능하며, 2024년부터는 2005년 12월 31일 이전 출생자에 한해 입장이 가능합니다. (대학생이어도
-            06년생은 입장 불가합니다.) (필수)</p>
+          <p><input type="checkbox"> 상기 결제정보를 확인하였으며, 구매진행에 동의합니다.(필수)</p>
+          <span class="material-symbols-outlined">
+            arrow_drop_down
+          </span>
         </div>
-        <div>
-          <p><input type="checkbox"> 티켓 발급 후 7일 이내 취소: 100% 환불 가능, 티켓 발급 후 3일 이내 취소: 50% 환불 가능, 당일 취소 및 노쇼: 환불 불가능, 티켓
-            양도: 불가능 합니다.(필수) </p>
-        </div>
-        <div>
-          <p><input type="checkbox"> 상기 결제정보를 확인하였으며, 구매진행에 동의합니다.(필수) </p>
-        </div>
-        <div class="btnConfirm">
-          <a href="/waterbomb_project/html/payment_success.html">확인</a>
-        </div>
+
+        <a href="/waterbomb_project/html/payment_success.html"><button class="btnConfirm">확인</button></a>
+
       </div>
+
+
+    </div>
   </main>
   <footer>
     <div class="contents">

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
 /* 로고 : MOVE Sans */
 @font-face {
   font-family: "MoveSans-Bold";
@@ -34,179 +36,112 @@ a {
 body {
   min-width: 320px;
 }
-/* 헤더 css 시작 */
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  background-color: #000000;
-  color: white;
-  height: 50px;
-  width: 100%;
-}
-header .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 35px;
-  padding: 0 10px;
-  border-radius: 5px;
-  border: 2px solid #ffbf00;
-}
-header .logo span {
-  color: #ffbf00;
-  font-family: "MoveSans-Bold";
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 7px;
-  /* 53.846% */
-}
-/* 헤더 css 끝 */
+
 /* main css 시작 */
 .paymentContents {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.paymentContents > h2 {
-  display: flex;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10px;
+}
+/* .top_title */
+.top_title {
+  display: flex;
+  padding: 15px 0px 10px 0px;
+  align-items: center;
+  gap: 100px;
+  border-bottom: 1px solid #E4E4E6;
+  position: relative;
+}
+.top_title .material-symbols-outlined {
   font-size: 16px;
-  line-height: 23px;
-  /* 191.667% */
-  border-bottom: 1px solid #e4e4e6;
+  color: #686868;
 }
-.guestInfo {
-  display: flex;
-  width: 100%;
-  padding: 0px 10px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
+.top_title h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
 }
-.guestInfo > p,
-.confirmOrder > p,
-.guestInfo .info p,
-.totalLabel p,
-.terms > div span,
-.paymentMethod p {
-  font-weight: 700;
-}
-.guestInfo p {
-  margin: 0;
-}
-.guestInfo .info {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: 10px;
-  align-items: center;
-  gap: 10px;
-  border-radius: 5px;
-  border: 1px solid #E4E4E6;
-  background: #FFF;
-}
-.guestInfo .info p {
-  width: 100%;
-  margin: 0;
-}
-.guestInfo .info span {
-  width: 100%;
-  color: #0AABFF;
-  font-size: 14px;
-}
+
+/* .confirmOrder */
 .confirmOrder {
   display: flex;
-  padding: 0px 10px;
   flex-direction: column;
-  gap: 5px;
-}
-.confirmOrder p {
-  margin: 0;
+  justify-content: center;
+  gap: 10px;
 }
 .confirmOrder p span {
   color: #686868;
-  font-weight: 400;
+  font-size: 12px;
 }
-.confirmOrder .order {
+.confirmOrder .regionSchedule {
   display: flex;
-  padding: 16px 0 16px;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #e4e4e6;
-
-  background: #f6f6f6;
-}
-.confirmOrder .order .orderContents {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.confirmOrder .order .orderContents .region {
-  display: flex;
-  width: 77px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background: rgba(255, 191, 0, 0.7);
+  border: 1px solid #E4E4E6;
+  background: rgba(254, 197, 22, 0.80);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
 }
-.regionSchedule {
-  font-weight: 700;
+.confirmOrder .regionSchedule {
+  font-size: 16px;
 }
+.confirmOrder .regionSchedule p .num {
+  color: #FF5252;
+}
+
+
+/* .paymentMethod */
 .paymentMethod {
   display: flex;
   flex-direction: column;
-  padding: 0px 10px;
-}
-.paymentMethod p {
-  margin: 0;
+  justify-content: center;
+  gap: 10px;
 }
 .paymentMethod .payList {
   display: flex;
-  justify-content: flex-start;
-  cursor: pointer;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
   gap: 10px;
+  border-radius: 5px;
+  background: #F7F7F7;
 }
+
 .paymentMethod .payList article {
   display: flex;
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 5px;
-  border: 2px solid #e4e4e6;
+  background: rgba(255, 255, 255, 0.70);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.paymentMethod .payList article img {
+  width: 30px;
 }
 .paymentMethod .payList article p {
-  margin: 0;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 12px;
 }
-.paymentMethod .payList article:hover {
-  border-color: #4DFF4D;
-}
 
-.paymentMethod .payList article.selected {
-  border-color: #4DFF4D;
-}
+/* .totalAmount */
 .totalAmount {
   display: flex;
-  justify-content: center;
-  gap: 10px;
   height: 49px;
-  padding: 10px;
-  border-top: 1px solid #e4e4e6;
-  background: #f6f6f6;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #E4E4E6;
+  background: #F7F7F7;
 }
 .totalAmount .totalLabel {
   display: flex;
@@ -214,45 +149,43 @@ header .logo span {
   align-items: center;
   flex: 1 0 0;
 }
-.totalLabel p {
-  margin: 0;
-}
+
 .terms {
   display: flex;
+  height: 350px;
+  padding: 10px;
   flex-direction: column;
-  gap: 5px;
-  padding: 0 0 20px 0;
+  align-items: center;
+  gap: 20px;
 }
-.terms > div {
-  padding: 0 0 0 15px
+.terms div {
+  display: flex;
+}
+.terms div p {
+  font-size: 12px;
+  /* width: 100%; */
 }
 
-.terms > div > div {
-  color: #7d7d7d;
-}
 .btnConfirm {
   display: flex;
-  width: 100%;
-  padding: 10px;
-  align-items: center;
-  flex-direction: column;
-}
-.btnConfirm a {
-  display: flex;
-  width: 100px;
-  height: 24px;
-  padding: 10px;
+  width: 83px;
+  padding: 5px 25px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 10px;
-  color: #000;
-  background: #0AABFF;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.80);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  border: none;
 }
-.btnConfirm a:hover {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+.btnConfirm:hover,
+.paymentMethod .payList article:hover {
+  box-shadow: inset 4px 2px 0px rgba(0, 0, 0, 0.25);
 }
+
+
 /* main css 끝 */
 /* footer css 시작 */
 footer {
